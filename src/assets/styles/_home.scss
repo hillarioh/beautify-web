@@ -1,0 +1,76 @@
+.home-page {
+  background: #eae8e8;
+  position: relative;
+  overflow-x: hidden;
+
+  .red-bg {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    background: #be5050;
+    top: 0;
+    right: 0;
+    img {
+      height: 550px;
+      width: 500px;
+      transform: rotate(11deg);
+    }
+  }
+
+  nav {
+    padding: 2rem;
+    position: relative;
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      li {
+        flex: 1 200px;
+        text-align: center;
+      }
+    }
+  }
+
+  .header {
+    padding-top: 16rem;
+    margin-left: 4rem;
+    display: flex;
+    padding-bottom: 1rem;
+
+    .header-1 {
+      width: 500px;
+
+      p {
+        font-size: 56px;
+        font-weight: 500;
+      }
+
+      .beauty {
+        font-weight: 500;
+        font-size: 42px;
+      }
+
+      h3 {
+        font-size: 40px;
+        color: #a5a2a2;
+        font-weight: 400;
+      }
+
+      button {
+        vertical-align: bottom;
+      }
+    }
+    .header-2 {
+      background: black;
+      width: 425px;
+      height: 380px;
+      position: relative;
+      img {
+        position: absolute;
+        transform: translate(7rem, 2.5rem);
+        width: 350px;
+        height: 305px;
+      }
+    }
+  }
+}
