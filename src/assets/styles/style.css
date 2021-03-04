@@ -396,7 +396,7 @@
 
 .product-item-page .product-item {
   position: relative;
-  height: 450px;
+  height: 420px;
   width: 720px;
   border-radius: 25px;
   background: #ffffff;
@@ -431,6 +431,32 @@
   margin-top: 2rem;
   font-size: 36px;
   color: #be5050;
+}
+
+.product-item-page .product-item .product-item-desc {
+  position: absolute;
+  font-family: "Josefin Sans", sans-serif;
+  bottom: 2rem;
+  width: 600px;
+}
+
+.product-item-page .product-item .product-item-desc .brand-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-item-page .product-item .product-item-desc .brand-feature {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 * {
