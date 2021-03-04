@@ -30,8 +30,16 @@ function Home() {
         </div>
 
         <div className="header-2">
-          <img src={intro} alt="homepage image" />
+          <img src={intro} alt="girl smiling" />
         </div>
+      </div>
+      <div className="step-swagger">
+        <p className="step">STEP</p>
+        <p className="step" style={{ color: "#605f5f" }}>
+          INTO
+        </p>
+        <p className="your">YOUR</p>
+        <p className="swag">SWAGGER</p>
       </div>
     </div>
   );

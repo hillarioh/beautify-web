@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
@@ -89,6 +90,26 @@
           transform: translate(7rem, 2.5rem);
   width: 350px;
   height: 305px;
+}
+
+.home-page .step-swagger {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 4rem;
+  margin-top: 5rem;
+}
+
+.home-page .step-swagger .step {
+  font-size: 51px;
+}
+
+.home-page .step-swagger .your {
+  color: #030303;
+  font-size: 56px;
+}
+
+.home-page .step-swagger .swag {
+  color: #be5050;
+  font-size: 70px;
 }
 
 .product-page {

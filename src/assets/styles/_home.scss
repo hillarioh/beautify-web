@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 .home-page {
   background: #eae8e8;
   position: relative;
@@ -71,6 +73,26 @@
         width: 350px;
         height: 305px;
       }
+    }
+  }
+
+  .step-swagger {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 4rem;
+    margin-top: 5rem;
+
+    .step {
+      font-size: 51px;
+    }
+
+    .your {
+      color: #030303;
+      font-size: 56px;
+    }
+
+    .swag {
+      color: #be5050;
+      font-size: 70px;
     }
   }
 }
