@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+.product-item-page {
+  position: relative;
+  //   width: 100%;
+  height: 120vh;
+  padding: 0 4rem;
+  background: #eae8e8;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  .product-item-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    .product-item-nav-logo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-item-nav-icon {
+      span {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .nav-links {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 17px;
+  }
+
+  .red-bg {
+    position: absolute;
+    height: 594px;
+    width: 800px;
+    background: #be5050;
+    border-radius: 25px;
+    transform: rotate(-62deg);
+    left: 76.62%;
+    top: 15.99%;
+  }
+
+  .product-item {
+    position: relative;
+    height: 450px;
+    width: 720px;
+    border-radius: 25px;
+    background: #ffffff;
+    margin: 1rem;
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+
+    .product-item-tag {
+      background: #ffbf81;
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      right: 0;
+      transform: skewY(20deg) translateY(-74px);
+      border-radius: 10px 10px 0 10px;
+    }
+
+    .product-item-details {
+      position: absolute;
+      top: 2rem;
+      font-family: "Josefin Sans", sans-serif;
+      span {
+        font-size: 26px;
+        font-style: normal;
+      }
+      .product-item-cart {
+        margin-top: 2rem;
+        font-size: 36px;
+        color: #be5050;
+      }
+    }
+  }
+}
