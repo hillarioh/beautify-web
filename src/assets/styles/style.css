@@ -2,7 +2,7 @@
 .product-page {
   position: relative;
   max-width: 1920px;
-  height: 2713px;
+  min-height: 100vh;
   background: #eae8e8;
   padding: 0 4rem;
 }
@@ -185,6 +185,46 @@
       -ms-flex: 33%;
           flex: 33%;
   max-width: 33%;
+  height: 500px;
+}
+
+.product-page .featured .featured-products .featured-item .featured-item-img {
+  overflow-y: hidden;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.product-page .featured .featured-products .featured-item .featured-item-details {
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+}
+
+.product-page .featured .featured-products .featured-item .featured-item-details p {
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.product-page .featured .featured-products .featured-item .featured-item-details h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #aca6a7;
+  margin-bottom: 1rem;
+}
+
+.product-page .featured .featured-products .featured-item .featured-item-details button {
+  border: none;
+  background: #be5050;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 10px 22px;
+  color: #ffffff;
 }
 
 * {
