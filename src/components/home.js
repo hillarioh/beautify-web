@@ -13,6 +13,8 @@ import leaves from "../assets/images/leaves.png";
 import bottle from "../assets/images/bottle.png";
 import client from "../assets/images/client.png";
 
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="home-page">
@@ -21,12 +23,24 @@ function Home() {
       </div>
       <nav>
         <ul>
-          <li>Barber?</li>
-          <li>Beauty Professional?</li>
-          <li>COMPANY LOGO</li>
-          <li>Set Up My Business</li>
-          <li>Sign Up</li>
-          <li>Login</li>
+          <li>
+            <Link to="/">Barber?</Link>
+          </li>
+          <li>
+            <Link to="/">Beauty Professional?</Link>
+          </li>
+          <li>
+            <Link to="/">COMPANY LOGO</Link>
+          </li>
+          <li>
+            <Link to="/">Set Up My Business</Link>
+          </li>
+          <li>
+            <Link to="/">Sign Up</Link>
+          </li>
+          <li>
+            <Link to="/">Login</Link>
+          </li>
         </ul>
       </nav>
       <div className="header">
