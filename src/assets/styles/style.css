@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 .home-page {
   background: #eae8e8;
   position: relative;
@@ -110,6 +111,268 @@
 .home-page .step-swagger .swag {
   color: #be5050;
   font-size: 70px;
+}
+
+.home-page .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.home-page .services .service {
+  position: relative;
+  height: 220px;
+  background: #ffffff;
+  border-radius: 25px;
+  font-family: "Montserrat", sans-serif;
+  margin: 2rem 1rem;
+}
+
+.home-page .services .service h3 {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.home-page .services .service button {
+  position: absolute;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 12px 20px;
+  background: black;
+  color: #ffffff;
+  right: 2rem;
+  bottom: 1.5rem;
+  border-radius: 25px;
+}
+
+.home-page .services .haircuts {
+  width: 380px;
+}
+
+.home-page .services .haircuts img {
+  width: 210px;
+  height: 220px;
+  -webkit-transform: translate(-2rem, -3rem);
+          transform: translate(-2rem, -3rem);
+}
+
+.home-page .services .barber {
+  width: 260px;
+}
+
+.home-page .services .barber img {
+  width: 290px;
+  height: 297px;
+  -webkit-transform: translate(62px, -77px);
+          transform: translate(62px, -77px);
+}
+
+.home-page .services .barber h3 {
+  left: 2rem;
+  top: 2rem;
+}
+
+.home-page .services .barber button {
+  left: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.home-page .services .color {
+  background: black;
+}
+
+.home-page .services .color img {
+  width: 200px;
+  height: 250px;
+  -webkit-transform: translate(100px, -77px);
+          transform: translate(100px, -77px);
+}
+
+.home-page .services .color h3 {
+  color: #eae8e8;
+}
+
+.home-page .services .color button {
+  background: #ffffff;
+  color: black;
+}
+
+.home-page .services .eyelashes img {
+  width: 235px;
+  height: 162px;
+  -webkit-transform: translate(2px, 37px);
+          transform: translate(2px, 37px);
+}
+
+.home-page .why {
+  margin: 2rem 4rem;
+}
+
+.home-page .why .why-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.home-page .why .why-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-page .why .why-body .why-item {
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  margin: 1rem 2rem;
+}
+
+.home-page .why .why-body .why-item img {
+  width: 72px;
+  height: 72px;
+}
+
+.home-page .why .why-body .why-item h2 {
+  margin: 1rem;
+  font-size: 24px;
+  font-weight: 800;
+  color: #be5050;
+}
+
+.home-page .olive-oil {
+  height: 280px;
+  background: #be5050;
+  border-radius: 0 45px 45px 0;
+  margin: 6rem 24% 6rem 0;
+  position: relative;
+}
+
+.home-page .olive-oil .olive-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 93px;
+  color: #ffffff;
+  width: 470px;
+  position: absolute;
+  padding-left: 1rem;
+  top: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-page .olive-oil #ol-img-1 {
+  position: absolute;
+  left: 21.89%;
+  bottom: -30%;
+  width: 600px;
+  height: 600px;
+}
+
+.home-page .olive-oil #ol-img-2 {
+  position: absolute;
+  left: 55.21%;
+  bottom: -33%;
+  width: 420px;
+  height: 550px;
+}
+
+.home-page .olive-oil .olive-shop {
+  position: absolute;
+  right: 0%;
+}
+
+.home-page .pro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.home-page .pro .pro-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 36px;
+  margin-right: 6rem;
+}
+
+.home-page .pro .pro-1 .pro-1-p {
+  color: #be5050;
+}
+
+.home-page .pro .pro-2 button {
+  background: #be5050;
+  color: #eae8e8;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 15px;
+  vertical-align: middle;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.home-page .clients {
+  margin: 4rem;
+}
+
+.home-page .clients h1 {
+  margin-bottom: 8rem;
+}
+
+.home-page .clients .client-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-page .clients .client-list .client-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 1rem;
+  background: #f7f2f2;
+  border-radius: 55px;
+  padding: 0 1rem;
+  text-align: center;
+  min-height: 400px;
+}
+
+.home-page .clients .client-list .client-item img {
+  width: 160px;
+  height: 160px;
+  border: 6px solid #be5050;
+  border-radius: 50%;
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
+}
+
+.home-page .clients .client-list .client-item p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .product-page {
