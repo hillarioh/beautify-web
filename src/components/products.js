@@ -12,6 +12,14 @@ import fimg2 from "../assets/images/fimg2.png";
 import fimg3 from "../assets/images/fimg3.png";
 
 function Products() {
+  const moveCard = () => {
+    document.querySelector(".category").scrollBy(150, 0);
+  };
+
+  const reverseCard = () => {
+    document.querySelector(".category").scrollBy(-150, 0);
+  };
+
   return (
     <div className="product-page">
       <nav className="product-nav">
@@ -54,30 +62,38 @@ function Products() {
         <span>SHOP</span>
         <hr className="line" />
       </div>
-      <div className="category">
-        <div className="category-item">
-          <span>HAIR CARE PRODUCTS</span>
-          <button>Explore</button>
-        </div>
-        <div className="category-item">
-          <span>SHOP THE COLLECTION</span>
-          <button>Explore</button>
-        </div>
-        <div className="category-item">
-          <span>BEARD CARE</span>
-          <button>Explore</button>
-        </div>
-        <div className="category-item">
-          <span>GROOMING KITS</span>
-          <button>Explore</button>
-        </div>
-        <div className="category-item">
-          <span>MAKEUP KITS</span>
-          <button>Explore</button>
-        </div>
-        <div className="category-item">
-          <span>SHOP THE COLLECTION</span>
-          <button>Explore</button>
+      <div className="products-category">
+        <button className="prv" onClick={(e) => reverseCard(e)}>
+          P
+        </button>
+        <button className="nxt" onClick={(e) => moveCard(e)}>
+          N
+        </button>
+        <div className="category">
+          <div className="category-item">
+            <span>HAIR CARE PRODUCTS</span>
+            <button>Explore</button>
+          </div>
+          <div className="category-item">
+            <span>SHOP THE COLLECTION</span>
+            <button>Explore</button>
+          </div>
+          <div className="category-item">
+            <span>BEARD CARE</span>
+            <button>Explore</button>
+          </div>
+          <div className="category-item">
+            <span>GROOMING KITS</span>
+            <button>Explore</button>
+          </div>
+          <div className="category-item">
+            <span>MAKEUP KITS</span>
+            <button>Explore</button>
+          </div>
+          <div className="category-item">
+            <span>SHOP THE COLLECTION</span>
+            <button>Explore</button>
+          </div>
         </div>
       </div>
       <div className="featured">

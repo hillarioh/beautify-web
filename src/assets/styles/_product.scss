@@ -102,36 +102,73 @@
     }
   }
 
-  .category {
-    display: flex;
-    flex-wrap: wrap;
-    .category-item {
-      position: relative;
-      height: 340px;
-      width: 270px;
-      border-radius: 25px;
-      background: #ffffff;
-      margin: 1rem;
+  .products-category {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: auto;
 
-      span {
-        position: absolute;
-        font-size: 35px;
-        font-weight: 700;
-        top: 30%;
-        margin: 0 1.5rem;
-      }
+    .prv {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      font-size: 20px;
+      // justify-self: end;
+      background: blueviolet;
+      color: #ffffff;
+      z-index: 1;
+      border: none;
+      border-radius: 15px;
+      padding: 12px 14px;
+    }
+    .nxt {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      font-size: 20px;
+      background: blueviolet;
+      color: #ffffff;
+      z-index: 1;
+      border: none;
+      border-radius: 15px;
 
-      button {
-        position: absolute;
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 26px;
-        bottom: 1.5rem;
-        right: 1.5rem;
-        background: #ffbf81;
-        color: #ffffff;
+      right: 0;
+      padding: 12px 14px;
+    }
+
+    .category {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      display: grid;
+      grid-gap: 12px;
+      grid-template-rows: 340px;
+      grid-template-columns: repeat(6, 270px);
+      overflow-x: hidden;
+
+      .category-item {
         border-radius: 25px;
-        padding: 12px 14px;
-        border: none;
+        background: #ffffff;
+        position: relative;
+        margin: 1rem;
+
+        span {
+          position: absolute;
+          font-size: 35px;
+          font-weight: 700;
+          top: 30%;
+          margin: 0 1.5rem;
+        }
+
+        button {
+          position: absolute;
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 26px;
+          bottom: 1.5rem;
+          right: 1.5rem;
+          background: #ffbf81;
+          color: #ffffff;
+          border-radius: 25px;
+          padding: 12px 14px;
+          border: none;
+        }
       }
     }
   }
