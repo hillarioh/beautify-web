@@ -1,0 +1,137 @@
+.service-page {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 2fr 9fr;
+
+  .service-nav {
+    background: #be5050;
+    grid-column: 1 / 2;
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 2rem;
+      padding: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      li {
+        padding: 1rem 2rem;
+        font-size: 16px;
+        font-weight: 800;
+      }
+    }
+  }
+  .service-body {
+    background: #eae8e8;
+    grid-column: 2 / 3;
+    display: grid;
+    padding: 2rem;
+    row-gap: 16px;
+    grid-template-rows: 100px auto;
+    .user-details {
+      grid-row: 1 / 2;
+      font-family: "Josefin Sans", sans-serif;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      h3 {
+        margin-right: 16px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+      }
+    }
+    .service-info {
+      grid-row: 2 /3;
+      display: grid;
+      row-gap: 16px;
+      column-gap: 16px;
+      grid-template-rows: 50px 300px 300px;
+      grid-template-columns: 1fr 2fr;
+
+      .title-details {
+        grid-area: 1 / 2 / 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        align-items: flex-end;
+        font-family: "Josefin Sans", sans-serif;
+        li {
+          text-align: center;
+          font-size: 20px;
+          font-weight: 800;
+        }
+      }
+
+      .title-body {
+        grid-area: 2 / 2 / 3 / 3;
+        background: #ffffff;
+        display: grid;
+        border-radius: 45px;
+      }
+
+      .prof-details {
+        grid-area: 2 / 1 / 4 / 2;
+        background: #ffffff;
+        border-radius: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Josefin Sans", sans-serif;
+        img {
+          width: 173px;
+          height: 170px;
+          margin: 1.5rem 0;
+        }
+        h3,
+        p {
+          font-size: 16px;
+          color: #ffbf81;
+        }
+
+        h4 {
+          margin: 1rem 0;
+          color: #ffbf81;
+        }
+        h5 {
+          margin: 1rem 0;
+          font-size: 16px;
+          font-weight: 800;
+        }
+        button {
+          margin-top: 1rem;
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 14px;
+          font-weight: 800;
+          background: #be5050;
+          color: #ffffff;
+          padding: 4px 18px;
+          border-radius: 5px;
+          border: none;
+        }
+
+        .biz-time {
+          display: flex;
+          ul {
+            list-style: none;
+            .time {
+              margin-left: 8px;
+              color: #be5050;
+            }
+          }
+        }
+      }
+      .map-details {
+        grid-area: 3 / 2 / 4 / 3;
+        background: #ffffff;
+        border-radius: 45px;
+      }
+    }
+  }
+}
