@@ -12,6 +12,9 @@ import wallet from "../assets/images/wallet.png";
 import leaves from "../assets/images/leaves.png";
 import bottle from "../assets/images/bottle.png";
 import client from "../assets/images/client.png";
+import locate from "../assets/images/locate.png";
+import appstore from "../assets/images/app.png";
+import google from "../assets/images/google.png";
 
 import { Link } from "react-router-dom";
 
@@ -201,6 +204,28 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="browse">
+        <div className="population">
+          <h1>BROWSE POPULAR</h1>
+          <p>SERVICES</p>
+        </div>
+        <div className="locate">
+          <div>
+            <span>Nairobi</span>
+            <img src={locate} alt="location" />
+          </div>
+        </div>
+      </div>
+      <div className="download">
+        <div className="down-1">
+          <p>
+            Download our app To discover new Services and providers, Faster.
+          </p>
+          <img src={appstore} alt="apple store" />
+          <img src={google} alt="google store" />
+        </div>
+        <div className="down-2"></div>
       </div>
     </div>
   );
