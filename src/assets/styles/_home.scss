@@ -358,9 +358,11 @@
     }
   }
   .download {
-    margin: 4rem;
+    margin: 6rem;
     background: #be5050;
     display: flex;
+    height: 480px;
+    border-radius: 90px;
     .down-1 {
       color: #eae8e8;
       flex: 1;
@@ -371,6 +373,16 @@
     }
     .down-2 {
       flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      .phone-bg {
+        width: 270px;
+        background: #ffffff;
+        border-radius: 35px;
+        margin-right: 4rem;
+        height: 500px;
+        transform: rotate(10deg) translate(-2rem, -4rem);
+      }
     }
   }
 }

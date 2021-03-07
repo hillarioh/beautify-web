@@ -15,6 +15,10 @@ import client from "../assets/images/client.png";
 import locate from "../assets/images/locate.png";
 import appstore from "../assets/images/app.png";
 import google from "../assets/images/google.png";
+import shopping from "../assets/images/shopping.png";
+import navy from "../assets/images/nav.png";
+import leaf from "../assets/images/dwn-leaf.png";
+import can from "../assets/images/dwn-can.png";
 
 import { Link } from "react-router-dom";
 
@@ -225,7 +229,34 @@ function Home() {
           <img src={appstore} alt="apple store" />
           <img src={google} alt="google store" />
         </div>
-        <div className="down-2"></div>
+        <div className="down-2">
+          <div className="phone-download">
+            <div className="phone-bg">
+              <header>
+                <img src={shopping} alt="navigation" />
+                <img src={navy} alt="shopping" />
+              </header>
+              <div>
+                <span>Home</span>
+                <span>Featured Products</span>
+              </div>
+              <p>
+                SHOP
+                <br />
+                BRANDS
+              </p>
+              <div>
+                <img src={leaf} alt="leaf" />
+                <img src={can} alt="can" />
+                <h5>OLIVE OIL</h5>
+                <h5>HAIR</h5>
+                <h5>POLISHER</h5>
+                <h6>$ 25.00</h6>
+              </div>
+              <button>ADD TO CART</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
