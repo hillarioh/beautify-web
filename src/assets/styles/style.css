@@ -1204,7 +1204,8 @@
   transition: 200ms ease-in-out;
   border-radius: 20px;
   z-index: 5;
-  background: #b4e9eb;
+  background: #ffffff;
+  border: 2px solid #637457;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1214,6 +1215,41 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  margin-left: 3rem;
+  padding-left: 2rem;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item_overlay .item-1 h2 {
+  margin-bottom: 2rem;
+}
+
+.item_overlay .item-1 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item_overlay .item-1 form .txt {
+  margin-bottom: 1rem;
+}
+
+.item_overlay .item-1 .save {
+  margin-top: 1rem;
 }
 
 .item_overlay .item-2 {
@@ -1227,21 +1263,6 @@
 #add_service {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-}
-
-#add_service form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#add_service .save {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 #add_product.active {

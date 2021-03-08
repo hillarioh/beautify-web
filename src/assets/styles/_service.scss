@@ -147,10 +147,30 @@
   border-radius: 20px;
 
   z-index: 5;
-  background: #b4e9eb;
+  background: #ffffff;
+  border: 2px solid #637457;
   display: flex;
   .item-1 {
     flex: 2;
+    margin-left: 3rem;
+    padding-left: 2rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      margin-bottom: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      .txt {
+        margin-bottom: 1rem;
+      }
+    }
+    .save {
+      margin-top: 1rem;
+    }
   }
   .item-2 {
     flex: 1;
@@ -161,13 +181,6 @@
 
 #add_service {
   transform: translate(-50%, -50%) scale(1);
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  .save {
-    align-self: flex-end;
-  }
 }
 
 #add_product.active {

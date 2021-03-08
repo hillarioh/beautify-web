@@ -2,10 +2,54 @@ import React from "react";
 import ellipse from "../../assets/images/ellipse.png";
 import mail from "../../assets/images/mail.png";
 import admini from "../../assets/images/admin.png";
-import TextField from "@material-ui/core/TextField";
+import { TextField, createMuiTheme, ThemeProvider } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#be5050",
+    },
+    secondary: {
+      main: "#be5050",
+    },
+  },
+  overrides: {
+    MuiInputLabel: {
+      root: {
+        color: "#e6e1e1",
+        fontWeight: "800",
+
+        "&$focused": {
+          // increase the specificity for the pseudo class
+          color: "#be5050",
+          fontWeight: "900",
+        },
+      },
+    },
+    MuiInputBase: {
+      root: {
+        color: "#686464",
+        fontWeight: "800",
+        "&$focused": {
+          // increase the specificity for the pseudo class
+        },
+      },
+    },
+  },
+});
+
+const useStyles = makeStyles({
+  root: {
+    padding: "6px 30px",
+    marginTop: "1rem",
+    alignSelf: "flex-end",
+  },
+});
 
 function Admin() {
+  const classes = useStyles();
   return (
     <>
       <div className="service-page">
@@ -68,15 +112,41 @@ function Admin() {
       <div className="item_overlay" id="add_service">
         <div className="item-1">
           <h2>ADD SERVICE</h2>
-          <form className="service-form" noValidate autoComplete="off">
-            <TextField id="standard-basic" label="Service Name" />
-            <TextField id="standard-basic" label="Description" />
-            <TextField id="standard-basic" label="Charge" />
-            <TextField id="standard-basic" label="Duration of Service" />
-          </form>
-          <Button variant="contained" className="save">
-            Default
-          </Button>
+          <ThemeProvider theme={theme}>
+            <form className="service-form" noValidate autoComplete="off">
+              <TextField
+                id="standard-basic"
+                label="Service Name"
+                className="txt"
+                color="primary"
+              />
+              <TextField
+                id="standard-basic"
+                className="txt"
+                label="Description"
+              />
+              <TextField
+                id="standard-basic"
+                className="txt"
+                type="number"
+                label="Charge"
+              />
+              <TextField
+                id="standard-basic"
+                className="txt"
+                label="Duration of Service"
+              />
+            </form>
+            <Button
+              variant="contained"
+              classes={{
+                root: classes.root,
+              }}
+              color="secondary"
+            >
+              Save
+            </Button>
+          </ThemeProvider>
         </div>
         <div className="item-2"></div>
       </div>
