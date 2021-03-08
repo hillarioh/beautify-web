@@ -74,7 +74,7 @@ function Home() {
         <p className="swag">SWAGGER</p>
       </div>
       <div className="services">
-        <div className="service haircuts">
+        {/* <div className="service haircuts">
           <img src={haircuts} alt="haircut" />
           <h3>HAIRCUTS</h3>
           <button>Browse</button>
@@ -84,31 +84,36 @@ function Home() {
           <h3>BARBER</h3>
           <button>Browse</button>
         </div>
-        <div className="service barber color">
+        <div className="service color">
           <img src={colors} alt="barber" />
           <h3>COLOR</h3>
           <button>Browse</button>
         </div>
-        <div className="service barber eyelashes">
+        <div className="service eyelashes">
           <img src={lashes} alt="barber" />
           <h3>EYELASHES</h3>
           <button>Browse</button>
         </div>
-        <div className="service haircuts">
+        <div className="service facials">
+          <img src={barber} alt="barber" />
+          <h3>FACIALS</h3>
+          <button>Browse</button>
+        </div>
+        <div className="service braids">
           <img src={braids} alt="barber" />
           <h3>BRAIDS</h3>
           <button>Browse</button>
         </div>
-        <div className="service barber">
+        <div className="service natural">
           <img src={natural} alt="barber" />
           <h3>NATURAL</h3>
           <button>Browse</button>
         </div>
-        <div className="service barber">
+        <div className="service nails">
           <img src={nails} alt="barber" />
           <h3>NAILS</h3>
           <button>Browse</button>
-        </div>
+        </div> */}
       </div>
       <div className="why">
         <div className="why-title">
