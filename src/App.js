@@ -3,14 +3,14 @@ import Products from "./components/products";
 import Category from "./components/category";
 import ProductItem from "./components/productItem";
 import Home from "./components/home";
-import Service from "./components/services/addService";
+import Admin from "./components/services/admin";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/Service" exact component={Service} />
+        <Route path="/admin" exact component={Admin} />
         <Route path="/products" exact component={Products} />
         <Route path="/productItem" exact component={ProductItem} />
         <Route path="/category" exact component={Category} />

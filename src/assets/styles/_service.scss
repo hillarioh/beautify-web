@@ -134,3 +134,58 @@
     }
   }
 }
+
+.item_overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 750px;
+  height: 480px;
+  max-width: 80%;
+  transition: 200ms ease-in-out;
+  border-radius: 20px;
+
+  z-index: 5;
+  background: #b4e9eb;
+  display: flex;
+  .item-1 {
+    flex: 2;
+  }
+  .item-2 {
+    flex: 1;
+    background: #be5050;
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+#add_service {
+  transform: translate(-50%, -50%) scale(1);
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .save {
+    align-self: flex-end;
+  }
+}
+
+#add_product.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#add_time.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#add_image.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#add_profile.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#del_product.active {
+  transform: translate(-50%, -50%) scale(1);
+}
