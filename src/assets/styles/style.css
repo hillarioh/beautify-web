@@ -1291,6 +1291,76 @@
   padding-left: 0;
 }
 
+.item_overlay .biz-hours .imgadd form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item_overlay .biz-hours .imgadd form .button {
+  border: 2px dotted black;
+  border-radius: 25px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item_overlay .biz-hours .imgadd form .button label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.item_overlay .biz-hours .imgadd form .button label .faplus {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 40px;
+  cursor: pointer;
+  color: black;
+  padding: 11px 6px;
+  border-radius: 50%;
+  background: #be5050;
+  margin-bottom: 1rem;
+}
+
+.item_overlay .biz-hours .imgadd form .button input[type="file"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+.item_overlay .biz-hours .imgadd form button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  background: #be5050;
+  border: none;
+  padding: 6px 15px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .item_overlay .item-2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1342,6 +1412,32 @@
           transform: translateX(-50%);
 }
 
+.item_overlay .item-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  padding-right: 2rem;
+}
+
+.item_overlay .item-4 p {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+.item_overlay .item-4 button {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 10px;
+  background: #be5050;
+  padding: 6px 15px;
+  border: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 1rem;
+}
+
 #add_service.active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -1352,7 +1448,7 @@
           transform: translate(-50%, -50%) scale(1);
 }
 
-#add_time {
+#add_time.active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
@@ -1367,7 +1463,7 @@
           transform: translate(-50%, -50%) scale(1);
 }
 
-#del_product.active {
+#del_product {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }

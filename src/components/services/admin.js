@@ -1,10 +1,11 @@
 import React from "react";
+import ImageUpload from "./imageUpload";
 import ellipse from "../../assets/images/ellipse.png";
 import mail from "../../assets/images/mail.png";
 import admini from "../../assets/images/admin.png";
 import bottle from "../../assets/images/bottle.png";
 import leaf from "../../assets/images/leaves.png";
-
+import caution from "../../assets/images/caution.png";
 import { TextField, createMuiTheme, ThemeProvider } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
@@ -275,132 +276,34 @@ function Admin() {
         </div>
       </div>
       <div className="item_overlay" id="add_image">
-        <div className="item-1">
-          <h2>ADD SERVICE</h2>
-          <ThemeProvider theme={theme}>
-            <form className="service-form" noValidate autoComplete="off">
-              <TextField
-                id="standard-basic"
-                label="Service Name"
-                className="txt"
-                color="primary"
-              />
-              <TextField
-                id="standard-basic"
-                className="txt"
-                label="Description"
-              />
-              <TextField
-                id="standard-basic"
-                className="txt"
-                type="number"
-                label="Charge"
-              />
-              <TextField
-                id="standard-basic"
-                className="txt"
-                label="Duration of Service"
-              />
-            </form>
-            <Button
-              variant="contained"
-              classes={{
-                root: classes.root,
-              }}
-              color="secondary"
-            >
-              Save
-            </Button>
-          </ThemeProvider>
+        <div className="item-1 biz-hours">
+          <h2>ADD IMAGES</h2>
+          <div className="imgadd">
+            <ImageUpload />
+          </div>
         </div>
         <div className="item-2">
           <img src={sciove} alt="scissor" />
         </div>
       </div>
       <div className="item_overlay" id="add_profile">
-        <div className="item-1">
-          <h2>ADD SERVICE</h2>
-          <ThemeProvider theme={theme}>
-            <form className="service-form" noValidate autoComplete="off">
-              <TextField
-                id="standard-basic"
-                label="Service Name"
-                className="txt"
-                color="primary"
-              />
-              <TextField
-                id="standard-basic"
-                className="txt"
-                label="Description"
-              />
-              <TextField
-                id="standard-basic"
-                className="txt"
-                type="number"
-                label="Charge"
-              />
-              <TextField
-                id="standard-basic"
-                className="txt"
-                label="Duration of Service"
-              />
-            </form>
-            <Button
-              variant="contained"
-              classes={{
-                root: classes.root,
-              }}
-              color="secondary"
-            >
-              Save
-            </Button>
-          </ThemeProvider>
+        <div className="item-1 biz-hours">
+          <h2>ADD PROFILE</h2>
+          <div className="imgadd">
+            <ImageUpload />
+          </div>
         </div>
         <div className="item-2">
           <img src={sciove} alt="scissor" />
         </div>
       </div>
       <div className="item_overlay" id="del_product">
-        <div className="item-1">
-          <h2>ADD SERVICE</h2>
-          <ThemeProvider theme={theme}>
-            <form className="service-form" noValidate autoComplete="off">
-              <TextField
-                id="standard-basic"
-                label="Service Name"
-                className="txt"
-                color="primary"
-              />
-              <TextField
-                id="standard-basic"
-                className="txt"
-                label="Description"
-              />
-              <TextField
-                id="standard-basic"
-                className="txt"
-                type="number"
-                label="Charge"
-              />
-              <TextField
-                id="standard-basic"
-                className="txt"
-                label="Duration of Service"
-              />
-            </form>
-            <Button
-              variant="contained"
-              classes={{
-                root: classes.root,
-              }}
-              color="secondary"
-            >
-              Save
-            </Button>
-          </ThemeProvider>
+        <div className="item-1 item-4">
+          <p>Are you sure you want to delete this product ?</p>
+          <button>proceed</button>
         </div>
         <div className="item-2">
-          <img src={sciove} alt="scissor" />
+          <img src={caution} alt="scissor" />
         </div>
       </div>
     </>
