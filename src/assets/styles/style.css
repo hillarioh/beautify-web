@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 .home-page {
   background: #eae8e8;
   position: relative;
@@ -1297,7 +1298,6 @@
 
 .product-item-page {
   position: relative;
-  height: 120vh;
   padding: 0 4rem;
   background: #eae8e8;
   overflow-x: hidden;
@@ -1348,11 +1348,12 @@
 .product-item-page .product-item {
   position: relative;
   height: 420px;
-  width: 720px;
+  width: 70%;
   border-radius: 25px;
   background: #ffffff;
   margin: 1rem;
   margin-top: 4rem;
+  margin-bottom: 5rem;
   padding: 1rem 2rem;
 }
 
@@ -1376,6 +1377,7 @@
 .product-item-page .product-item .product-item-details span {
   font-size: 26px;
   font-style: normal;
+  font-family: "Montserrat", sans-serif;
 }
 
 .product-item-page .product-item .product-item-details .product-item-cart {
@@ -1387,8 +1389,8 @@
 .product-item-page .product-item .product-item-desc {
   position: absolute;
   font-family: "Josefin Sans", sans-serif;
-  bottom: 2rem;
-  width: 600px;
+  top: 50%;
+  width: 90%;
 }
 
 .product-item-page .product-item .product-item-desc .brand-rate {
@@ -1400,6 +1402,10 @@
           justify-content: space-between;
 }
 
+.product-item-page .product-item .product-item-desc .brand-rate div .br-dsc {
+  font-family: "Montserrat", sans-serif;
+}
+
 .product-item-page .product-item .product-item-desc .brand-feature {
   margin-top: 1rem;
   display: -webkit-box;
@@ -1408,6 +1414,37 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.product-item-page .product-item .product-item-desc .brand-feature ul {
+  list-style-type: square;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.product-item-page .product-item .product-item-desc .brand-feature ul li {
+  margin-left: 6px;
+}
+
+.product-item-page .product-item .product-item-desc .brand-feature ul li:nth-of-type(1) {
+  list-style: none;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.product-item-page .product-item .product-item-desc .brand-feature button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Josefin Sans", sans-serif;
+  background: #be5050;
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  -webkit-transform: translateX(10rem);
+          transform: translateX(10rem);
 }
 
 .service-page {

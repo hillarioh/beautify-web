@@ -1,8 +1,7 @@
 import React from "react";
-import cart from "../assets/images/cart.png";
-import cartItem from "../assets/images/cartItem.png";
+import cartItem from "../../assets/images/cartItem.png";
 
-function ProductItem() {
+function Pay() {
   return (
     <div className="product-item-page">
       <nav className="product-item-nav">
@@ -26,31 +25,11 @@ function ProductItem() {
         />
         <div className="product-item-details">
           <span>MARINI Men Waves Pomade</span>
-          <h4 className="product-item-cart">KES 3300</h4>
         </div>
-        <div className="product-item-desc">
-          <div className="brand-rate">
-            <div>
-              <span>Brand: </span>
-              <span>Marini Naturals</span>
-            </div>
-            <div>
-              <span>stars</span>
-              <span>42</span>
-            </div>
-          </div>
-          <div className="brand-feature">
-            <ul>
-              <li>Perfect for men</li>
-              <li>400gramms</li>
-              <li>Perfect waves for your scalp</li>
-            </ul>
-            <button>ADD TO CART</button>
-          </div>
-        </div>
+        <div className="product-item-desc"></div>
       </div>
     </div>
   );
 }
 
-export default ProductItem;
+export default Pay;

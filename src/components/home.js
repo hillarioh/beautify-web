@@ -21,8 +21,8 @@ import navy from "../assets/images/nav.png";
 import leaf from "../assets/images/dwn-leaf.png";
 import can from "../assets/images/dwn-can.png";
 
-import { TextField, createMuiTheme, ThemeProvider } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
+import { TextField } from "@material-ui/core";
+
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import PinterestIcon from "@material-ui/icons/Pinterest";

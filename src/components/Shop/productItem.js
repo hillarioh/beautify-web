@@ -1,8 +1,8 @@
 import React from "react";
-import cart from "../assets/images/cart.png";
-import cartItem from "../assets/images/cartItem.png";
+import cart from "../../assets/images/cart.png";
+import cartItem from "../../assets/images/cartItem.png";
 
-function Checkout() {
+function ProductItem() {
   return (
     <div className="product-item-page">
       <nav className="product-item-nav">
@@ -31,16 +31,17 @@ function Checkout() {
         <div className="product-item-desc">
           <div className="brand-rate">
             <div>
-              <span>Brand: </span>
-              <span>Marini Naturals</span>
+              <span className="br-ttl">Brand: </span>
+              <span className="br-dsc">Marini Naturals</span>
             </div>
             <div>
-              <span>stars</span>
+              <span className="br-ttl">stars</span>
               <span>42</span>
             </div>
           </div>
           <div className="brand-feature">
             <ul>
+              <li>Key Features</li>
               <li>Perfect for men</li>
               <li>400gramms</li>
               <li>Perfect waves for your scalp</li>
@@ -53,4 +54,4 @@ function Checkout() {
   );
 }
 
-export default Checkout;
+export default ProductItem;

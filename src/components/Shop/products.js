@@ -1,15 +1,15 @@
 import React from "react";
-import img1 from "../assets/images/img1.png";
-import img2 from "../assets/images/img2.png";
-import img3 from "../assets/images/img3.png";
+import img1 from "../../assets/images/img1.png";
+import img2 from "../../assets/images/img2.png";
+import img3 from "../../assets/images/img3.png";
 
-import marini from "../assets/images/marini.png";
-import laguah from "../assets/images/laguah.png";
-import akusi from "../assets/images/akusi.png";
+import marini from "../../assets/images/marini.png";
+import laguah from "../../assets/images/laguah.png";
+import akusi from "../../assets/images/akusi.png";
 
-import fimg1 from "../assets/images/fimg1.png";
-import fimg2 from "../assets/images/fimg2.png";
-import fimg3 from "../assets/images/fimg3.png";
+import fimg1 from "../../assets/images/fimg1.png";
+import fimg2 from "../../assets/images/fimg2.png";
+import fimg3 from "../../assets/images/fimg3.png";
 
 function Products() {
   const moveCard = () => {

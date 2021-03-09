@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 .product-item-page {
   position: relative;
   //   width: 100%;
-  height: 120vh;
+
   padding: 0 4rem;
   background: #eae8e8;
   overflow-x: hidden;
@@ -45,11 +46,12 @@
   .product-item {
     position: relative;
     height: 420px;
-    width: 720px;
+    width: 70%;
     border-radius: 25px;
     background: #ffffff;
     margin: 1rem;
     margin-top: 4rem;
+    margin-bottom: 5rem;
     padding: 1rem 2rem;
 
     .product-item-tag {
@@ -69,6 +71,7 @@
       span {
         font-size: 26px;
         font-style: normal;
+        font-family: "Montserrat", sans-serif;
       }
       .product-item-cart {
         margin-top: 2rem;
@@ -80,17 +83,48 @@
     .product-item-desc {
       position: absolute;
       font-family: "Josefin Sans", sans-serif;
-      bottom: 2rem;
-      width: 600px;
+      top: 50%;
+      width: 90%;
 
       .brand-rate {
         display: flex;
         justify-content: space-between;
+        div {
+          .br-dsc {
+            font-family: "Montserrat", sans-serif;
+          }
+        }
       }
       .brand-feature {
         margin-top: 1rem;
         display: flex;
         justify-content: space-between;
+        ul {
+          // list-style: none;
+          list-style-type: square;
+          font-family: "Montserrat", sans-serif;
+          font-size: 14px;
+          li {
+            margin-left: 6px;
+          }
+          li:nth-of-type(1) {
+            list-style: none;
+            font-size: 18px;
+            font-family: "Josefin Sans", sans-serif;
+          }
+        }
+
+        button {
+          align-self: center;
+          font-family: "Josefin Sans", sans-serif;
+          background: #be5050;
+          color: #ffffff;
+          font-size: 20px;
+          border: none;
+          padding: 8px 15px;
+          border-radius: 8px;
+          transform: translateX(10rem);
+        }
       }
     }
   }

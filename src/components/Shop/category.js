@@ -1,8 +1,8 @@
 import React from "react";
-import cart from "../assets/images/cart.png";
-import cartItem from "../assets/images/cartItem.png";
-import cartItem2 from "../assets/images/cartitem2.png";
-import cartItem3 from "../assets/images/cartitem3.png";
+import cart from "../../assets/images/cart.png";
+import cartItem from "../../assets/images/cartItem.png";
+import cartItem2 from "../../assets/images/cartitem2.png";
+import cartItem3 from "../../assets/images/cartitem3.png";
 
 function Category() {
   return (
