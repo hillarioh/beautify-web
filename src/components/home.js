@@ -229,19 +229,21 @@ function Home() {
         </div>
       </div>
       <div className="download">
-        {/* <div className="down-1">
+        <div className="down-1">
           <p>
             Download our app To discover new Services and providers, Faster.
           </p>
-          <img src={appstore} alt="apple store" />
-          <img src={google} alt="google store" />
+          <div>
+            <img src={appstore} alt="apple store" />
+            <img src={google} alt="google store" />
+          </div>
         </div>
         <div className="down-2">
           <div className="phone-download">
             <div className="phone-bg">
               <header>
-                <img src={shopping} alt="navigation" />
-                <img src={navy} alt="shopping" />
+                <img src={navy} alt="navigation" />
+                <img src={shopping} alt="shopping" />
               </header>
               <div>
                 <span>Home</span>
@@ -253,17 +255,18 @@ function Home() {
                 BRANDS
               </p>
               <div>
-                <img src={leaf} alt="leaf" />
-                <img src={can} alt="can" />
-                <h5>OLIVE OIL</h5>
-                <h5>HAIR</h5>
-                <h5>POLISHER</h5>
-                <h6>$ 25.00</h6>
+                <img className="dwn-lf" src={leaf} alt="leaf" />
+                <img className="dwn-cn" src={can} alt="can" />
               </div>
+              <h5>OLIVE OIL</h5>
+              <h5>HAIR</h5>
+              <h5>POLISHER</h5>
+              <h6>$ 25.00</h6>
+
               <button>ADD TO CART</button>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

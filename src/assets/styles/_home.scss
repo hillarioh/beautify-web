@@ -419,6 +419,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 
     .population {
       margin-right: 8rem;
@@ -464,9 +465,21 @@
     .down-1 {
       color: #eae8e8;
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 6rem;
       p {
         font-size: 46px;
         font-family: "Josefin Sans", sans-serif;
+      }
+
+      div {
+        margin-top: 1rem;
+        img {
+          width: 200px;
+          height: 64px;
+        }
       }
     }
     .down-2 {
@@ -475,11 +488,66 @@
       justify-content: flex-end;
       .phone-bg {
         width: 270px;
+        padding: 1.5rem;
         background: #ffffff;
         border-radius: 35px;
         margin-right: 4rem;
+        display: flex;
+        flex-direction: column;
         height: 500px;
+        font-family: "Josefin Sans", sans-serif;
         transform: rotate(10deg) translate(-2rem, -4rem);
+
+        header {
+          display: flex;
+          justify-content: space-between;
+          img {
+            transform: rotate(-11deg);
+          }
+        }
+        div:nth-of-type(1) {
+          font-size: 12px;
+          span {
+            margin-right: 1rem;
+          }
+        }
+        p {
+          font-size: 12px;
+          margin-top: 1rem;
+          color: #be5050;
+          opacity: 28%;
+        }
+        div:nth-of-type(2) {
+          height: 234px;
+          position: relative;
+          img {
+            position: absolute;
+          }
+
+          .dwn-lf {
+            width: 195px;
+            height: 140px;
+            bottom: 0;
+          }
+
+          .dwn-cn {
+            height: 220px;
+            bottom: 0;
+            transform: rotate(-11deg);
+          }
+        }
+        h6 {
+          color: #be5050;
+        }
+        button {
+          margin-top: 2.5rem;
+          background: black;
+          color: #ffffff;
+          padding: 6px 0;
+          border: none;
+          border-radius: 10px;
+          font-family: "Josefin Sans", sans-serif;
+        }
       }
     }
   }
