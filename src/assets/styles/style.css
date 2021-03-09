@@ -726,6 +726,180 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+.home-page .footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2] 2fr;
+      grid-template-columns: repeat(2, 1fr) 2fr;
+}
+
+.home-page .footer .social {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+  height: 370px;
+  overflow: hidden;
+}
+
+.home-page .footer .social .ft-bg {
+  height: 500px;
+  width: 500px;
+  background-color: #be5050;
+  border-radius: 50%;
+  -webkit-transform: translateX(-37%);
+          transform: translateX(-37%);
+  position: relative;
+}
+
+.home-page .footer .social .ft-bg .twt {
+  position: absolute;
+  font-size: 42px;
+  top: 1rem;
+  left: 50%;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  cursor: pointer;
+}
+
+.home-page .footer .social .ft-bg .inst {
+  position: absolute;
+  font-size: 42px;
+  top: 15%;
+  right: 22%;
+  cursor: pointer;
+}
+
+.home-page .footer .social .ft-bg .pin {
+  position: absolute;
+  font-size: 42px;
+  top: 30%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.home-page .footer .social .ft-bg .fab {
+  position: absolute;
+  font-size: 42px;
+  top: 45%;
+  right: 7%;
+  cursor: pointer;
+}
+
+.home-page .footer .social .ft-bg .shine {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 58%;
+  border: 1px solid #707070;
+  background: #eae8e8;
+  right: -2%;
+  border-radius: 50%;
+  opacity: 0.62;
+}
+
+.home-page .footer .bio {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 1rem 2rem;
+}
+
+.home-page .footer .bio h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 26px;
+  color: #be5050;
+  margin-bottom: 1rem;
+}
+
+.home-page .footer .bio p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.home-page .footer .contact {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 3 / 2 / 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  padding: 1rem 2rem;
+}
+
+.home-page .footer .contact .quick {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 /2 /2;
+}
+
+.home-page .footer .contact .quick h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 26px;
+  color: #be5050;
+  margin-bottom: 1rem;
+}
+
+.home-page .footer .contact .quick ul {
+  list-style: none;
+}
+
+.home-page .footer .contact .quick ul li {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.home-page .footer .contact .talk {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.home-page .footer .contact .talk h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 26px;
+  color: #be5050;
+  margin-bottom: 1rem;
+}
+
+.home-page .footer .contact .talk ul {
+  list-style: none;
+}
+
+.home-page .footer .contact .talk ul li {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.home-page .footer .contact .subscribe {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / 3 / 3;
+}
+
 .product-page {
   position: relative;
   max-width: 1920px;

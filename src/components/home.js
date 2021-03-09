@@ -21,6 +21,12 @@ import navy from "../assets/images/nav.png";
 import leaf from "../assets/images/dwn-leaf.png";
 import can from "../assets/images/dwn-can.png";
 
+import { TextField, createMuiTheme, ThemeProvider } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import PinterestIcon from "@material-ui/icons/Pinterest";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -268,6 +274,50 @@ function Home() {
           </div>
         </div>
       </div>
+      <footer className="footer">
+        <div className="social">
+          <div className="ft-bg">
+            <TwitterIcon className="twt" />
+            <InstagramIcon className="inst" />
+            <PinterestIcon className="pin" />
+            <FacebookIcon className="fab" />
+            <div className="shine"></div>
+          </div>
+        </div>
+        <div className="bio">
+          <h3>COMPANY LOGO</h3>
+          <p>
+            Company Name here is Comprised of beauty professionals all around
+            the country. Clients can Acquire services from the comfortOf their
+            home.
+          </p>
+        </div>
+        <div className="contact">
+          <div className="quick">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>Shop</li>
+              <li>Barber</li>
+              <li>Beauty Professional</li>
+            </ul>
+          </div>
+          <div className="talk">
+            <h3>Talk To Us</h3>
+            <ul>
+              <li>info@companyname.com</li>
+              <li>+254 711223344</li>
+              <li>Help Centre</li>
+            </ul>
+          </div>
+          <div className="subscribe">
+            <h3>FOR LATEST NEWS AND UPDATES</h3>
+            <form action="">
+              <TextField type="email" label="email address" variant="filled" />
+              <input type="button" value="subscribe" />
+            </form>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
