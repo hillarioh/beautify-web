@@ -1,5 +1,4 @@
 import React from "react";
-
 import ImageUpload from "./imageUpload";
 import ellipse from "../../assets/images/ellipse.png";
 import mail from "../../assets/images/mail.png";
@@ -7,100 +6,59 @@ import admini from "../../assets/images/admin.png";
 import bottle from "../../assets/images/bottle.png";
 import leaf from "../../assets/images/leaves.png";
 import caution from "../../assets/images/caution.png";
-import { TextField, createMuiTheme, ThemeProvider } from "@material-ui/core";
+import { TextField, ThemeProvider } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
 import sciove from "../../assets/images/scyov.png";
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#be5050",
-    },
-    secondary: {
-      main: "#be5050",
-    },
-  },
-  overrides: {
-    MuiInputLabel: {
-      root: {
-        color: "#bbb8b8",
-        fontWeight: "800",
-
-        "&$focused": {
-          // increase the specificity for the pseudo class
-          color: "#be5050",
-          fontWeight: "900",
-        },
-      },
-    },
-    MuiInputBase: {
-      root: {
-        color: "#686464",
-        fontWeight: "800",
-        "&$focused": {
-          // increase the specificity for the pseudo class
-        },
-      },
-    },
-  },
-});
-
-const useStyles = makeStyles({
-  root: {
-    padding: "3px 30px",
-    marginTop: "1rem",
-    alignSelf: "flex-end",
-    marginRight: "1rem",
-    fontWeight: "800",
-  },
-});
+import { theme, useStyles } from "../theme";
 
 function Profile() {
   const classes = useStyles();
   return (
-    <div className="service-body">
-      <div className="user-details">
-        <h3>Username</h3>
-        <img src={ellipse} alt="ellipse" />
-        <img src={mail} alt="mail" />
-      </div>
-      <div className="service-info">
-        <ul className="title-details">
-          <li>SERVICES</li>
-          <li>REVIEWS</li>
-          <li>ABOUT</li>
-        </ul>
-        <div className="title-body"></div>
-        <div className="prof-details">
-          <img src={admini} alt="profile " />
-          <h3>CASTORIS BABERSHOP</h3>
-          <h5>PROFESSIONAL</h5>
-          <p>STARS</p>
-          <button>Message</button>
-          <h4>BUSINESS HOURS</h4>
-          <div className="biz-time">
-            <ul>
-              <li>SUN:</li>
-              <li>MON:</li>
-              <li>TUE:</li>
-              <li>WED:</li>
-              <li>THUR:</li>
-              <li>FRI:</li>
-              <li>SAT:</li>
-            </ul>
-            <ul>
-              <li className="time">9AM -2PM</li>
-              <li className="time">9AM -2PM</li>
-              <li className="time">9AM -2PM</li>
-              <li className="time">9AM -2PM</li>
-              <li className="time">9AM -2PM</li>
-              <li className="time">9AM -2PM</li>
-              <li className="time">9AM -2PM</li>
-            </ul>
-          </div>
+    <>
+      <div className="service-body">
+        <div className="user-details">
+          <h3>Username</h3>
+          <img src={ellipse} alt="ellipse" />
+          <img src={mail} alt="mail" />
         </div>
-        <div className="map-details"></div>
+        <div className="service-info">
+          <ul className="title-details">
+            <li>SERVICES</li>
+            <li>REVIEWS</li>
+            <li>ABOUT</li>
+          </ul>
+          <div className="title-body"></div>
+          <div className="prof-details">
+            <img src={admini} alt="profile " />
+            <h3>CASTORIS BABERSHOP</h3>
+            <h5>PROFESSIONAL</h5>
+            <p>STARS</p>
+            <button>Message</button>
+            <h4>BUSINESS HOURS</h4>
+            <div className="biz-time">
+              <ul>
+                <li>SUN:</li>
+                <li>MON:</li>
+                <li>TUE:</li>
+                <li>WED:</li>
+                <li>THUR:</li>
+                <li>FRI:</li>
+                <li>SAT:</li>
+              </ul>
+              <ul>
+                <li className="time">9AM -2PM</li>
+                <li className="time">9AM -2PM</li>
+                <li className="time">9AM -2PM</li>
+                <li className="time">9AM -2PM</li>
+                <li className="time">9AM -2PM</li>
+                <li className="time">9AM -2PM</li>
+                <li className="time">9AM -2PM</li>
+              </ul>
+            </div>
+          </div>
+          <div className="map-details"></div>
+        </div>
       </div>
       <div className="item_overlay" id="add_service">
         <div className="item-1">
@@ -292,7 +250,7 @@ function Profile() {
           <img src={caution} alt="scissor" />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
