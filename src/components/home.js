@@ -5,6 +5,7 @@ import haircuts from "../assets/images/haircut-service.png";
 import barber from "../assets/images/barber-service.png";
 import colors from "../assets/images/color-service.png";
 import lashes from "../assets/images/eyelashes-service.png";
+import facial from "../assets/images/facial.png";
 import braids from "../assets/images/braids-service.png";
 import natural from "../assets/images/natural-service.png";
 import nails from "../assets/images/nails-service.png";
@@ -73,51 +74,51 @@ function Home() {
         <p className="your">YOUR</p>
         <p className="swag">SWAGGER</p>
       </div>
-      {/* <div className="services">
-        <div className="service haircuts">
+      <div className="services">
+        <div className="service haircuts right-part ">
           <img src={haircuts} alt="haircut" />
           <h3>HAIRCUTS</h3>
           <button>Browse</button>
         </div>
-        <div className="service barber">
+        <div className="service barber left-part">
           <img src={barber} alt="barber" />
           <h3>BARBER</h3>
           <button>Browse</button>
         </div>
-        <div className="service color">
+        <div className="service color left-part">
           <img src={colors} alt="barber" />
           <h3>COLOR</h3>
           <button>Browse</button>
         </div>
-        <div className="service eyelashes">
+        <div className="service eyelashes left-part">
           <img src={lashes} alt="barber" />
           <h3>EYELASHES</h3>
           <button>Browse</button>
         </div>
         <div className="service facials">
-          <img src={barber} alt="barber" />
+          <img src={facial} alt="barber" />
           <h3>FACIALS</h3>
           <button>Browse</button>
         </div>
-        <div className="service braids">
+        <div className="service braids right-part ">
           <img src={braids} alt="barber" />
           <h3>BRAIDS</h3>
           <button>Browse</button>
         </div>
-        <div className="service natural">
+        <div className="service natural left-part">
           <img src={natural} alt="barber" />
           <h3>NATURAL</h3>
           <button>Browse</button>
         </div>
-        <div className="service nails">
+        <div className="service nails left-part">
           <img src={nails} alt="barber" />
           <h3>NAILS</h3>
           <button>Browse</button>
         </div>
-      </div> */}
+      </div>
       <div className="why">
         <div className="why-title">
-          <h2>WHY</h2>
+          <h3>WHY</h3>
           <h2>US?</h2>
         </div>
         <div className="why-body">
