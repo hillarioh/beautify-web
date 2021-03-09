@@ -73,8 +73,8 @@ function Home() {
         <p className="your">YOUR</p>
         <p className="swag">SWAGGER</p>
       </div>
-      <div className="services">
-        {/* <div className="service haircuts">
+      {/* <div className="services">
+        <div className="service haircuts">
           <img src={haircuts} alt="haircut" />
           <h3>HAIRCUTS</h3>
           <button>Browse</button>
@@ -113,8 +113,8 @@ function Home() {
           <img src={nails} alt="barber" />
           <h3>NAILS</h3>
           <button>Browse</button>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
       <div className="why">
         <div className="why-title">
           <h2>WHY</h2>
@@ -160,9 +160,10 @@ function Home() {
           <span>OLIVE</span>
           <span>OIL</span>
         </div>
-        <img src={leaves} alt="leaves" id="ol-img-1" />
-        <img src={bottle} alt="bottle" id="ol-img-2" />
-
+        <div className="olive-img">
+          <img src={leaves} alt="leaves" id="ol-img-1" />
+          <img src={bottle} alt="bottle" id="ol-img-2" />
+        </div>
         <div className="olive-shop">
           <h2>PRODUCTS WE DELIVER TO YOU</h2>
           <p>VISIT OUR SHOP FOR THE BEST HAIR PRODUCTS</p>
@@ -227,7 +228,7 @@ function Home() {
         </div>
       </div>
       <div className="download">
-        <div className="down-1">
+        {/* <div className="down-1">
           <p>
             Download our app To discover new Services and providers, Faster.
           </p>
@@ -261,7 +262,7 @@ function Home() {
               <button>ADD TO CART</button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
