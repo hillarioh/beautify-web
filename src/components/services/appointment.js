@@ -1,7 +1,11 @@
 import React from "react";
 
 function Appointment() {
-  return <div>Appointments</div>;
+  return (
+    <>
+      <div className="appointment"></div>
+    </>
+  );
 }
 
 export default Appointment;

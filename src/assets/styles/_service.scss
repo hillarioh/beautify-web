@@ -222,6 +222,75 @@
       }
     }
   }
+
+  .dashboard {
+    background: #eae8e8;
+    grid-column: 2 / 3;
+    display: grid;
+    padding: 2rem;
+    grid-template-rows: 100px auto;
+    .user-details {
+      grid-row: 1 / 2;
+      font-family: "Josefin Sans", sans-serif;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      h3 {
+        margin-right: 16px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+      }
+    }
+    .dashboard-info {
+      grid-row: 2 /3;
+      display: grid;
+      row-gap: 32px;
+      column-gap: 32px;
+      grid-template-rows: 250px 300px;
+      grid-template-columns: 3fr 3fr 4fr;
+      .clients {
+        grid-area: 1 / 1 / 2 / 2;
+        border-radius: 45px;
+        background: #ffffff;
+        padding: 3rem;
+      }
+      .total {
+        grid-area: 1 / 2 / 2 / 3;
+        border-radius: 45px;
+        background: #ffffff;
+        padding: 3rem;
+      }
+      .annual {
+        grid-area: 2 / 1 / 3 / 3;
+        border-radius: 45px;
+        background: #ffffff;
+        padding: 3rem;
+      }
+      .calendar {
+        grid-area: 1 / 3 / 1 / 4;
+        border-radius: 45px;
+        background: #ffffff;
+        padding: 3rem;
+      }
+      .appnt {
+        grid-area: 2 / 3 / 3 / 4;
+        border-radius: 45px;
+        background: #ffffff;
+        padding: 3rem;
+      }
+    }
+  }
+
+  .appointment {
+    background: #eae8e8;
+    grid-column: 2 / 3;
+    display: grid;
+    padding: 2rem;
+  }
 }
 
 .item_overlay {
