@@ -1,0 +1,113 @@
+.list-biz {
+  display: flex;
+  min-height: 650px;
+  nav {
+    flex: 3;
+    background: #be5050;
+    h2 {
+      margin: 4rem 3rem;
+    }
+  }
+  .list-body {
+    flex: 9;
+    background: #eae8e8;
+    position: relative;
+    overflow-x: hidden;
+
+    .white-bg {
+      width: 700px;
+      height: 500px;
+      border-radius: 50px;
+      background: #ffffff;
+      transform: rotate(-41deg);
+      position: absolute;
+      top: -40%;
+      left: 52%;
+    }
+
+    .list-form {
+      display: flex;
+      position: relative;
+      z-index: 1;
+      .item-1 {
+        flex: 1;
+        padding-top: 6rem;
+        padding-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+          margin-bottom: 1rem;
+          font-family: "Josefin Sans", sans-serif;
+          color: #be5050;
+        }
+        .service-form {
+          display: flex;
+          flex-direction: column;
+          .txt {
+            margin-bottom: 1rem;
+          }
+        }
+        .hour-form {
+          .biz-tym {
+            display: flex;
+            align-items: center;
+            font-family: "Josefin Sans", sans-serif;
+            span {
+              flex: 1;
+            }
+            div {
+              flex: 2;
+              display: flex;
+              align-items: center;
+              span {
+                text-align: center;
+              }
+            }
+          }
+        }
+        .save {
+          margin-top: 1rem;
+        }
+      }
+      .sign {
+        flex: 1;
+
+        position: relative;
+        div {
+          position: absolute;
+          top: 40%;
+          left: 30%;
+          transform: translate(50%);
+        }
+        section {
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          flex-wrap: wrap;
+          article {
+            flex: 1;
+            text-align: center;
+            padding: 0 1rem;
+            p {
+              font-size: 14px;
+              font-family: "Montserrat", sans-serif;
+            }
+            button {
+              padding: 10px 20px;
+              margin-bottom: 1rem;
+              background: black;
+              color: #ffffff;
+              border: none;
+              cursor: pointer;
+              font-family: "Josefin Sans", sans-serif;
+              font-size: 16px;
+              outline: none;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -2441,6 +2441,178 @@
           transform: translate(-50%, -50%) scale(1);
 }
 
+.list-biz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 650px;
+}
+
+.list-biz nav {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  background: #be5050;
+}
+
+.list-biz nav h2 {
+  margin: 4rem 3rem;
+}
+
+.list-biz .list-body {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  background: #eae8e8;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.list-biz .list-body .white-bg {
+  width: 700px;
+  height: 500px;
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-transform: rotate(-41deg);
+          transform: rotate(-41deg);
+  position: absolute;
+  top: -40%;
+  left: 52%;
+}
+
+.list-biz .list-body .list-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.list-biz .list-body .list-form .item-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 6rem;
+  padding-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-biz .list-body .list-form .item-1 h2 {
+  margin-bottom: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #be5050;
+}
+
+.list-biz .list-body .list-form .item-1 .service-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list-biz .list-body .list-form .item-1 .service-form .txt {
+  margin-bottom: 1rem;
+}
+
+.list-biz .list-body .list-form .item-1 .hour-form .biz-tym {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.list-biz .list-body .list-form .item-1 .hour-form .biz-tym span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.list-biz .list-body .list-form .item-1 .hour-form .biz-tym div {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-biz .list-body .list-form .item-1 .hour-form .biz-tym div span {
+  text-align: center;
+}
+
+.list-biz .list-body .list-form .item-1 .save {
+  margin-top: 1rem;
+}
+
+.list-biz .list-body .list-form .sign {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.list-biz .list-body .list-form .sign div {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+}
+
+.list-biz .list-body .list-form .sign section {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list-biz .list-body .list-form .sign section article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.list-biz .list-body .list-form .sign section article p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.list-biz .list-body .list-form .sign section article button {
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  background: black;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  outline: none;
+  border-radius: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -30,7 +30,7 @@ function Appointment() {
   useEffect(() => {
     const value = appointment.filter((app) => app.id === currentView);
     setCurrApp(value[0]);
-  });
+  }, [currentView]);
 
   return (
     <>
