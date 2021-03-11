@@ -11,10 +11,15 @@ const theme = createMuiTheme({
     },
   },
   overrides: {
+    MuiFormLabel: {
+      root: {},
+    },
     MuiInputLabel: {
       root: {
         color: "#bbb8b8",
         fontWeight: "800",
+        display: "flex",
+        alignItems: "center",
 
         "&$focused": {
           color: "#be5050",
@@ -27,6 +32,21 @@ const theme = createMuiTheme({
         color: "#686464",
         fontWeight: "800",
         "&$focused": {},
+      },
+      input: {
+        // padding: "10px",
+      },
+    },
+    MuiOutlinedInput: {
+      root: {
+        borderRadius: "30px",
+        color: "#be5050",
+      },
+      input: {
+        paddingBottom: "10px",
+        paddingLeft: "15px",
+        paddingRight: "15px",
+        // paddingTop: "5px",
       },
     },
   },

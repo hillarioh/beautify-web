@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField, ThemeProvider, Checkbox } from "@material-ui/core";
+import { TextField, ThemeProvider } from "@material-ui/core";
 import { theme, useStyles } from "../theme";
 import Button from "@material-ui/core/Button";
 
