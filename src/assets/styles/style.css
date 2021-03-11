@@ -1598,6 +1598,28 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+.service-page .service-body .service-info .prof-details .blank-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.service-page .service-body .service-info .prof-details .blank-pic h4 {
+  color: black;
+}
+
 .service-page .service-body .service-info .prof-details img {
   width: 173px;
   height: 170px;
@@ -2163,7 +2185,25 @@
   outline: none;
 }
 
-.item_overlay {
+.service-page .overlay {
+  position: fixed;
+  opacity: 0;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(139, 139, 137, 0.5);
+  pointer-events: none;
+}
+
+.service-page .overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.service-page .item_overlay {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2183,7 +2223,7 @@
       grid-template-columns: 6fr 4fr;
 }
 
-.item_overlay .item-1 {
+.service-page .item_overlay .item-1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -2202,13 +2242,13 @@
           justify-content: center;
 }
 
-.item_overlay .item-1 h2 {
+.service-page .item_overlay .item-1 h2 {
   margin-bottom: 2rem;
   font-family: "Josefin Sans", sans-serif;
   color: #be5050;
 }
 
-.item_overlay .item-1 .service-form {
+.service-page .item_overlay .item-1 .service-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2218,11 +2258,11 @@
           flex-direction: column;
 }
 
-.item_overlay .item-1 .service-form .txt {
+.service-page .item_overlay .item-1 .service-form .txt {
   margin-bottom: 1rem;
 }
 
-.item_overlay .item-1 .hour-form .biz-tym {
+.service-page .item_overlay .item-1 .hour-form .biz-tym {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2232,13 +2272,13 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-.item_overlay .item-1 .hour-form .biz-tym span {
+.service-page .item_overlay .item-1 .hour-form .biz-tym span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.item_overlay .item-1 .hour-form .biz-tym div {
+.service-page .item_overlay .item-1 .hour-form .biz-tym div {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -2250,20 +2290,20 @@
           align-items: center;
 }
 
-.item_overlay .item-1 .hour-form .biz-tym div span {
+.service-page .item_overlay .item-1 .hour-form .biz-tym div span {
   text-align: center;
 }
 
-.item_overlay .item-1 .save {
+.service-page .item_overlay .item-1 .save {
   margin-top: 1rem;
 }
 
-.item_overlay .biz-hours {
+.service-page .item_overlay .biz-hours {
   margin-left: 2rem;
   padding-left: 0;
 }
 
-.item_overlay .biz-hours .imgadd form {
+.service-page .item_overlay .biz-hours .imgadd form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2273,7 +2313,7 @@
           flex-direction: column;
 }
 
-.item_overlay .biz-hours .imgadd form .button {
+.service-page .item_overlay .biz-hours .imgadd form .button {
   border: 2px dotted black;
   border-radius: 25px;
   height: 250px;
@@ -2288,7 +2328,7 @@
           align-items: center;
 }
 
-.item_overlay .biz-hours .imgadd form .button label {
+.service-page .item_overlay .biz-hours .imgadd form .button label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2302,7 +2342,7 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-.item_overlay .biz-hours .imgadd form .button label .faplus {
+.service-page .item_overlay .biz-hours .imgadd form .button label .faplus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 40px;
@@ -2314,12 +2354,12 @@
   margin-bottom: 1rem;
 }
 
-.item_overlay .biz-hours .imgadd form .button input[type="file"] {
+.service-page .item_overlay .biz-hours .imgadd form .button input[type="file"] {
   visibility: hidden;
   position: absolute;
 }
 
-.item_overlay .biz-hours .imgadd form button {
+.service-page .item_overlay .biz-hours .imgadd form button {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-family: "Josefin Sans", sans-serif;
@@ -2333,7 +2373,7 @@
   cursor: pointer;
 }
 
-.item_overlay .item-2 {
+.service-page .item_overlay .item-2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -2350,12 +2390,12 @@
           align-items: flex-end;
 }
 
-.item_overlay .item-2 img {
+.service-page .item_overlay .item-2 img {
   height: 80%;
   width: 90%;
 }
 
-.item_overlay .item-3 {
+.service-page .item_overlay .item-3 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -2364,18 +2404,18 @@
   position: relative;
 }
 
-.item_overlay .item-3 img {
+.service-page .item_overlay .item-3 img {
   position: absolute;
 }
 
-.item_overlay .item-3 img:nth-of-type(1) {
+.service-page .item_overlay .item-3 img:nth-of-type(1) {
   width: 400px;
   height: 300px;
   left: -3rem;
   bottom: 0;
 }
 
-.item_overlay .item-3 img:nth-of-type(2) {
+.service-page .item_overlay .item-3 img:nth-of-type(2) {
   width: 117px;
   height: 350px;
   bottom: 0;
@@ -2384,19 +2424,19 @@
           transform: translateX(-50%);
 }
 
-.item_overlay .item-4 {
+.service-page .item_overlay .item-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   padding-right: 2rem;
 }
 
-.item_overlay .item-4 p {
+.service-page .item_overlay .item-4 p {
   margin-bottom: 1rem;
   font-size: 20px;
   text-align: center;
 }
 
-.item_overlay .item-4 button {
+.service-page .item_overlay .item-4 button {
   font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
   font-size: 18px;
@@ -2411,32 +2451,32 @@
   cursor: pointer;
 }
 
-#add_service.active {
+.service-page #add_service.active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-#add_product.active {
+.service-page #add_product.active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-#add_time.active {
+.service-page #add_time.active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-#add_image.active {
+.service-page #add_image.active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-#add_profile.active {
+.service-page #add_profile.active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-#del_product.active {
+.service-page #del_product.active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
