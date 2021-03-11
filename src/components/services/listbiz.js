@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import { TextField, ThemeProvider, Checkbox } from "@material-ui/core";
 import { theme, useStyles } from "../theme";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import Input from "@material-ui/core/Input";
-import InputLabel from "@material-ui/core/InputLabel";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import Visibility from "@material-ui/icons/Visibility";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 function ListBusiness() {

@@ -5,6 +5,7 @@ import Pay from "./components/Shop/pay";
 import Checkout from "./components/Shop/checkout";
 import ProductItem from "./components/Shop/productItem";
 import Home from "./components/home";
+import UserProfile from "./components/services/userprofile";
 import ListBiz from "./components/services/listbiz";
 import Admin from "./components/services/admin";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -13,6 +14,7 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/user-profile" component={UserProfile} />
         <Route path="/list-business" component={ListBiz} />
         <Route path="/admin" component={Admin} />
         <Route path="/pay" component={Pay} />

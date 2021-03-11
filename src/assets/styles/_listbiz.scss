@@ -1,6 +1,7 @@
 .list-biz {
   display: flex;
   min-height: 650px;
+  position: relative;
   nav {
     flex: 3;
     background: #be5050;
@@ -105,6 +106,42 @@
               outline: none;
               border-radius: 15px;
             }
+          }
+        }
+      }
+    }
+  }
+
+  .user-form {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 45px;
+    top: 16%;
+    left: 19%;
+    width: 73%;
+    .item-1 {
+      grid-column: 1 / 2;
+      display: flex;
+      padding: 5rem;
+
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-family: "Josefin Sans", sans-serif;
+        color: #be5050;
+      }
+      .service-form {
+        display: flex;
+
+        .form-1 {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          padding: 0 1rem;
+          .txt {
+            margin-bottom: 1rem;
           }
         }
       }
