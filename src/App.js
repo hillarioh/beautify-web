@@ -1,5 +1,5 @@
 import "./assets/styles/style.css";
-import Products from "./components/Shop/products";
+import Shop from "./components/Shop/shop";
 import Category from "./components/Shop/category";
 import Pay from "./components/Shop/pay";
 import Checkout from "./components/Shop/checkout";
@@ -21,10 +21,10 @@ function App() {
         <Route path="/list-business" component={ListBiz} />
         <Route path="/admin" component={Admin} />
         <Route path="/pay" component={Pay} />
-        <Route path="/products" component={Products} />
+        <Route path="/shop/:category/:item" component={ProductItem} />
+        <Route path="/shop/:category" exact component={Category} />
+        <Route path="/shop" exact component={Shop} />
         <Route path="/checkout" component={Checkout} />
-        <Route path="/productitem" component={ProductItem} />
-        <Route path="/category" component={Category} />
         <Route path="/" exact component={Home} />
       </Switch>
     </Router>

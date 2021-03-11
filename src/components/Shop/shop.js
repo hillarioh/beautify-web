@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useRouteMatch } from "react-router-dom";
 import img1 from "../../assets/images/img1.png";
 import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/img3.png";
@@ -11,7 +12,8 @@ import fimg1 from "../../assets/images/fimg1.png";
 import fimg2 from "../../assets/images/fimg2.png";
 import fimg3 from "../../assets/images/fimg3.png";
 
-function Products() {
+function Shop() {
+  let match = useRouteMatch();
   const moveCard = () => {
     document.querySelector(".category").scrollBy(150, 0);
   };
@@ -72,27 +74,39 @@ function Products() {
         <div className="category">
           <div className="category-item">
             <span>HAIR CARE PRODUCTS</span>
-            <button>Explore</button>
+            <button>
+              <Link to={`${match.url}/categoryid`}>Explore</Link>
+            </button>
           </div>
           <div className="category-item">
             <span>SHOP THE COLLECTION</span>
-            <button>Explore</button>
+            <button>
+              <Link to={`${match.url}/categoryid`}>Explore</Link>
+            </button>
           </div>
           <div className="category-item">
             <span>BEARD CARE</span>
-            <button>Explore</button>
+            <button>
+              <Link to={`${match.url}/categoryid`}>Explore</Link>
+            </button>
           </div>
           <div className="category-item">
             <span>GROOMING KITS</span>
-            <button>Explore</button>
+            <button>
+              <Link to={`${match.url}/categoryid`}>Explore</Link>
+            </button>
           </div>
           <div className="category-item">
             <span>MAKEUP KITS</span>
-            <button>Explore</button>
+            <button>
+              <Link to={`${match.url}/categoryid`}>Explore</Link>
+            </button>
           </div>
           <div className="category-item">
             <span>SHOP THE COLLECTION</span>
-            <button>Explore</button>
+            <button>
+              <Link to={`${match.url}/categoryid`}>Explore</Link>
+            </button>
           </div>
         </div>
       </div>
@@ -147,4 +161,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Shop;
