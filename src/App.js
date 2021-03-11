@@ -5,7 +5,8 @@ import Pay from "./components/Shop/pay";
 import Checkout from "./components/Shop/checkout";
 import ProductItem from "./components/Shop/productItem";
 import Home from "./components/home";
-import ClientLogin from "./components/services/clientlogin";
+import Login from "./components/services/login/login";
+
 import UserProfile from "./components/services/userprofile";
 import ListBiz from "./components/services/listbiz";
 import Admin from "./components/services/admin";
@@ -15,7 +16,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/client-login" component={ClientLogin} />
+        <Route path="/login" component={Login} />
         <Route path="/user-profile" component={UserProfile} />
         <Route path="/list-business" component={ListBiz} />
         <Route path="/admin" component={Admin} />

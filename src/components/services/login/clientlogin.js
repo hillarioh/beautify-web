@@ -1,6 +1,6 @@
 import React from "react";
 import { TextField, ThemeProvider } from "@material-ui/core";
-import { theme } from "../theme";
+import { theme } from "../../theme";
 
 function ClientLogin() {
   return (
@@ -11,7 +11,7 @@ function ClientLogin() {
         <h1>COMPANYLOGO</h1>
       </div>
       <div className="login">
-        <section>
+        <section className="clgn">
           <h2>Log in As Client</h2>
           <ThemeProvider theme={theme}>
             <form className="service-form" noValidate autoComplete="off">
