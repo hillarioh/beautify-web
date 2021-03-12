@@ -4,6 +4,7 @@ import Nav from "./clientnav";
 import Profile from "./profile";
 import Wallet from "./wallet";
 import Appointment from "./appointment";
+import ServiceProvider from "./serviceprovider";
 
 function Logout() {
   return <div>LOGOUT</div>;
@@ -15,6 +16,10 @@ function Client() {
     <div className="client-page">
       <Nav />
       <Switch>
+        <Route
+          path={`${match.path}/service/:servicerId`}
+          component={ServiceProvider}
+        />
         <Route path={`${match.path}/profile`} component={Profile} />
         <Route path={`${match.path}/wallet`} component={Wallet} />
         <Route path={`${match.path}/appointment`} component={Appointment} />

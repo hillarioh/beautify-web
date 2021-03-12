@@ -63,10 +63,6 @@ function Appointment() {
               {` ${currApp.id}, ${currApp.user_name} `}
               today at <span>{currApp.date}</span>
             </p>
-            <div>
-              <button>Confirm</button>
-              <button>Cancel & Notify</button>
-            </div>
           </div>
         </div>
       </div>
