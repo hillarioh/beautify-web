@@ -5,6 +5,7 @@ import Pay from "./components/Shop/pay";
 import Checkout from "./components/Shop/checkout";
 import ProductItem from "./components/Shop/productItem";
 import Home from "./components/home";
+import Book from "./components/client/book";
 import Login from "./components/services/login/login";
 import UserProfile from "./components/services/userprofile";
 import ListBiz from "./components/services/listbiz";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/user-profile" component={UserProfile} />
         <Route path="/list-business" component={ListBiz} />
+        <Route path="/booking" component={Book} />
         <Route path="/client" component={Client} />
         <Route path="/user" component={User} />
         <Route path="/pay" component={Pay} />

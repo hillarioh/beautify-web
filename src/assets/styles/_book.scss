@@ -1,0 +1,53 @@
+.booking-page {
+  padding: 0 4rem;
+  background: #eae8e8;
+  min-height: 750px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    div {
+      display: flex;
+      align-items: center;
+
+      h3 {
+        margin-right: 16px;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .filter {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    .td {
+      background: #be5050;
+      margin-right: 0.5rem;
+      padding: 6px 7rem 6px 6px;
+      border-radius: 8px;
+    }
+    .tl {
+      background: #be5050;
+      margin: 0 0.5rem;
+      padding: 6px 30px;
+      border-radius: 8px;
+    }
+  }
+  .filter-body {
+    height: 550px;
+    margin-top: 1rem;
+    background: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    article {
+      flex: 1;
+    }
+  }
+}
