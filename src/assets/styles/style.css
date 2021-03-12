@@ -1563,6 +1563,7 @@
   text-align: center;
   font-size: 20px;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .service-page .service-body .service-info .title-body {
@@ -1576,6 +1577,7 @@
   display: grid;
   border-radius: 45px;
   padding: 2rem;
+  position: relative;
 }
 
 .service-page .service-body .service-info .title-body .product-list {
@@ -1596,11 +1598,11 @@
   margin-bottom: 1rem;
 }
 
-.service-page .service-body .service-info .title-body .product-list .item div h2 {
+.service-page .service-body .service-info .title-body .product-list .item div:nth-of-type(1) h2 {
   font-size: 18px;
 }
 
-.service-page .service-body .service-info .title-body .product-list .item div p {
+.service-page .service-body .service-info .title-body .product-list .item div:nth-of-type(1) p {
   font-size: 14px;
 }
 
@@ -1611,6 +1613,29 @@
   border-radius: 8px;
   font-size: 14px;
   border: none;
+  cursor: pointer;
+}
+
+.service-page .service-body .service-info .title-body .fab {
+  position: absolute;
+  color: #000000;
+  font-weight: 400;
+  font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #be5050;
+  bottom: 1rem;
+  right: 1rem;
   cursor: pointer;
 }
 

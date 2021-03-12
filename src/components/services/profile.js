@@ -12,6 +12,7 @@ import {
 } from "../overlay/overlay";
 import data from "../data/products";
 import DeleteIcon from "@material-ui/icons/Delete";
+import EditIcon from "@material-ui/icons/Edit";
 
 const StatusPic = ({ modal }) => {
   const getModal = (link) => {
@@ -40,15 +41,26 @@ const ProductItem = ({ product, modal }) => {
         <h2>{product.product_name}</h2>
         <p>{`$${product.price} Per ${product.rate}`}</p>
       </div>
-      <button
-        data-modal-target="#del_product"
-        onClick={(e) => getModal(e.target)}
-      >
-        <DeleteIcon
+      <div>
+        <button
+          data-modal-target="#add_product"
+          onClick={(e) => getModal(e.target)}
+        >
+          <EditIcon
+            data-modal-target="#add_product"
+            onClick={(e) => getModal(e.target)}
+          />
+        </button>
+        <button
           data-modal-target="#del_product"
           onClick={(e) => getModal(e.target)}
-        />
-      </button>
+        >
+          <DeleteIcon
+            data-modal-target="#del_product"
+            onClick={(e) => getModal(e.target)}
+          />
+        </button>
+      </div>
     </article>
   );
 };
@@ -66,6 +78,7 @@ const Products = ({ modal }) => {
 function Profile() {
   const [profpic, setProf] = useState();
   const [overlay, setOverlay] = useState();
+  const [tab, setTab] = useState("services");
 
   useEffect(() => {
     setOverlay(document.getElementById("overlay"));
@@ -78,6 +91,11 @@ function Profile() {
     modal.classList.add("active");
     active = `#${modal.id}.active`;
     overlay.classList.add("active");
+  };
+
+  const getModal = (link) => {
+    const mode = document.querySelector(link.dataset.modalTarget);
+    openModal(mode);
   };
 
   const closeModal = (e) => {
@@ -99,12 +117,72 @@ function Profile() {
         </div>
         <div className="service-info">
           <ul className="title-details">
-            <li>SERVICES</li>
-            <li>REVIEWS</li>
-            <li>PRODUCTS</li>
+            {tab === "services" ? (
+              <li
+                id="services"
+                style={{ borderBottom: "3px solid #be5050" }}
+                onClick={(e) => setTab("services")}
+              >
+                SERVICES
+              </li>
+            ) : (
+              <li id="services" onClick={(e) => setTab("services")}>
+                SERVICES
+              </li>
+            )}
+            {tab === "reviews" ? (
+              <li
+                id="reviews"
+                style={{ borderBottom: "3px solid #be5050" }}
+                onClick={(e) => setTab("reviews")}
+              >
+                REVIEWS
+              </li>
+            ) : (
+              <li id="reviews" onClick={(e) => setTab("reviews")}>
+                REVIEWS
+              </li>
+            )}
+            {tab === "products" ? (
+              <li
+                id="products"
+                style={{ borderBottom: "3px solid #be5050" }}
+                onClick={(e) => setTab("products")}
+              >
+                PRODUCTS
+              </li>
+            ) : (
+              <li id="products" onClick={(e) => setTab("products")}>
+                PRODUCTS
+              </li>
+            )}
           </ul>
           <div className="title-body">
-            <Products modal={openModal} />
+            {tab === "services" ? (
+              <>
+                <Products modal={openModal} />
+                <div
+                  className="fab"
+                  data-modal-target="#add_service"
+                  onClick={(e) => getModal(e.target)}
+                >
+                  +
+                </div>
+              </>
+            ) : tab === "reviews" ? (
+              "No Reviews Yet"
+            ) : (
+              <>
+                <Products modal={openModal} />
+                <div
+                  className="fab"
+                  data-modal-target="#add_product"
+                  onClick={(e) => getModal(e.target)}
+                >
+                  +
+                </div>
+              </>
+            )}
           </div>
           <div className="prof-details">
             {profpic ? (
@@ -141,6 +219,8 @@ function Profile() {
           <div className="map-details"></div>
         </div>
       </div>
+      <AddService />
+      <AddProduct />
       <AddProfile />
       <DelProduct />
       <div
