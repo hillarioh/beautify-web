@@ -1575,6 +1575,43 @@
   display: -ms-grid;
   display: grid;
   border-radius: 45px;
+  padding: 2rem;
+}
+
+.service-page .service-body .service-info .title-body .product-list {
+  overflow-y: scroll;
+  scroll-padding-top: 1rem;
+}
+
+.service-page .service-body .service-info .title-body .product-list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.service-page .service-body .service-info .title-body .product-list .item div h2 {
+  font-size: 18px;
+}
+
+.service-page .service-body .service-info .title-body .product-list .item div p {
+  font-size: 14px;
+}
+
+.service-page .service-body .service-info .title-body .product-list .item button {
+  margin-right: 1rem;
+  padding: 4px 32px;
+  background: #be5050;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
 }
 
 .service-page .service-body .service-info .prof-details {
@@ -2201,6 +2238,7 @@
 .service-page .overlay.active {
   opacity: 1;
   pointer-events: all;
+  z-index: 3;
 }
 
 .service-page .item_overlay {

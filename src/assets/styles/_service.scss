@@ -77,6 +77,35 @@
         background: #ffffff;
         display: grid;
         border-radius: 45px;
+
+        padding: 2rem;
+        .product-list {
+          overflow-y: scroll;
+          scroll-padding-top: 1rem;
+          .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            div {
+              h2 {
+                font-size: 18px;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+            button {
+              margin-right: 1rem;
+              padding: 4px 32px;
+              background: #be5050;
+              border-radius: 8px;
+              font-size: 14px;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
       }
 
       .prof-details {
@@ -510,6 +539,7 @@
   .overlay.active {
     opacity: 1;
     pointer-events: all;
+    z-index: 3;
   }
 
   .item_overlay {

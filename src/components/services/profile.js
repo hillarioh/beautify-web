@@ -10,6 +10,8 @@ import {
   AddProfile,
   DelProduct,
 } from "../overlay/overlay";
+import data from "../data/products";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 const StatusPic = ({ modal }) => {
   const getModal = (link) => {
@@ -27,6 +29,40 @@ const StatusPic = ({ modal }) => {
   );
 };
 
+const ProductItem = ({ product, modal }) => {
+  const getModal = (link) => {
+    const mode = document.querySelector(link.dataset.modalTarget);
+    modal(mode);
+  };
+  return (
+    <article className="item">
+      <div>
+        <h2>{product.product_name}</h2>
+        <p>{`$${product.price} Per ${product.rate}`}</p>
+      </div>
+      <button
+        data-modal-target="#del_product"
+        onClick={(e) => getModal(e.target)}
+      >
+        <DeleteIcon
+          data-modal-target="#del_product"
+          onClick={(e) => getModal(e.target)}
+        />
+      </button>
+    </article>
+  );
+};
+
+const Products = ({ modal }) => {
+  return (
+    <div className="product-list">
+      {data.map((prod) => {
+        return <ProductItem product={prod} key={prod.id} modal={modal} />;
+      })}
+    </div>
+  );
+};
+
 function Profile() {
   const [profpic, setProf] = useState();
   const [overlay, setOverlay] = useState();
@@ -39,13 +75,18 @@ function Profile() {
 
   const openModal = (modal) => {
     if (modal == null) return;
-    const show = () => {
-      modal.classList.add("active");
-    };
-    show();
-
+    modal.classList.add("active");
     active = `#${modal.id}.active`;
     overlay.classList.add("active");
+  };
+
+  const closeModal = (e) => {
+    const modals = document.querySelectorAll(active);
+    modals.forEach((modal) => {
+      if (modal == null) return;
+      modal.classList.remove("active");
+      overlay.classList.remove("active");
+    });
   };
 
   return (
@@ -60,9 +101,11 @@ function Profile() {
           <ul className="title-details">
             <li>SERVICES</li>
             <li>REVIEWS</li>
-            <li>ABOUT</li>
+            <li>PRODUCTS</li>
           </ul>
-          <div className="title-body"></div>
+          <div className="title-body">
+            <Products modal={openModal} />
+          </div>
           <div className="prof-details">
             {profpic ? (
               <img src={admini} alt="profile " />
@@ -99,7 +142,12 @@ function Profile() {
         </div>
       </div>
       <AddProfile />
-      <div className="overlay" id="overlay"></div>
+      <DelProduct />
+      <div
+        className="overlay"
+        id="overlay"
+        onClick={(e) => closeModal(e)}
+      ></div>
     </>
   );
 }
