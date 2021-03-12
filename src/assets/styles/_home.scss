@@ -42,25 +42,40 @@
 
     .header-1 {
       width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-      p {
-        font-size: 56px;
-        font-weight: 500;
-      }
+      .top {
+        p {
+          font-size: 56px;
+          font-weight: 500;
+        }
 
-      .beauty {
-        font-weight: 500;
-        font-size: 42px;
-      }
+        .beauty {
+          font-weight: 500;
+          font-size: 42px;
+        }
 
-      h3 {
-        font-size: 40px;
-        color: #a5a2a2;
-        font-weight: 400;
+        h3 {
+          font-size: 40px;
+          color: #a5a2a2;
+          font-weight: 400;
+        }
       }
 
       button {
-        vertical-align: bottom;
+        align-self: flex-start;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 10px 26px;
+        font-size: 14px;
+        color: white;
+        background: black;
+        border: none;
+        border-radius: 15px;
+        margin: 1rem;
+        cursor: pointer;
+        outline: none;
       }
     }
     .header-2 {

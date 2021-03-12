@@ -17,7 +17,7 @@ function ListBusiness() {
         <div className="white-bg"></div>
         <div className="list-form">
           <div className="item-1">
-            <h2>ADD SERVICE</h2>
+            <h2>List Your Business</h2>
             <ThemeProvider theme={theme}>
               <form className="service-form" noValidate autoComplete="on">
                 <TextField

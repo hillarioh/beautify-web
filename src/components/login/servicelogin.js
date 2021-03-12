@@ -1,8 +1,9 @@
 import React from "react";
 import { TextField, ThemeProvider } from "@material-ui/core";
-import { theme } from "../../theme";
+import { theme } from "../theme";
+import { Link } from "react-router-dom";
 
-function ClientLogin() {
+function servicelogin() {
   return (
     <div className="client-login">
       <div className="company">
@@ -12,7 +13,7 @@ function ClientLogin() {
       </div>
       <div className="login">
         <section className="clgn">
-          <h2>Log in As Client</h2>
+          <h2>Log in As Service Provider</h2>
           <ThemeProvider theme={theme}>
             <form className="service-form" noValidate autoComplete="off">
               <TextField
@@ -35,7 +36,9 @@ function ClientLogin() {
               />
             </form>
           </ThemeProvider>
-          <button>LOG IN</button>
+          <button>
+            <Link to="/user">LOG IN</Link>
+          </button>
           <h4>Forgot Password?</h4>
         </section>
       </div>
@@ -43,4 +46,4 @@ function ClientLogin() {
   );
 }
 
-export default ClientLogin;
+export default servicelogin;

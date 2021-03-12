@@ -38,34 +38,38 @@ function Home() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Barber?</Link>
+            <Link to="/set-up">Barber?</Link>
           </li>
           <li>
-            <Link to="/">Beauty Professional?</Link>
+            <Link to="/set-up">Beauty Professional?</Link>
           </li>
           <li>
             <Link to="/">COMPANY LOGO</Link>
           </li>
           <li>
-            <Link to="/">Set Up My Business</Link>
+            <Link to="/set-up">Set Up My Business</Link>
           </li>
           <li>
-            <Link to="/">Sign Up</Link>
+            <Link to="/signup">Sign Up</Link>
           </li>
           <li>
-            <Link to="/">Login</Link>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       </nav>
       <div className="header">
         <div className="header-1">
-          <p>
-            DISCOVER &<br /> BOOK{" "}
-          </p>
-          <span className="beauty">Beauty &</span>
-          <h3>Barber Appointments</h3>
+          <div className="top">
+            <p>
+              DISCOVER &<br /> BOOK{" "}
+            </p>
+            <span className="beauty">Beauty &</span>
+            <h3>Barber Appointments</h3>
+          </div>
 
-          <button>Get Started</button>
+          <button>
+            <Link to="/signup">Get Started</Link>
+          </button>
         </div>
 
         <div className="header-2">
@@ -84,42 +88,58 @@ function Home() {
         <div className="service haircuts right-part ">
           <img src={haircuts} alt="haircut" />
           <h3>HAIRCUTS</h3>
-          <button>Browse</button>
+          <button>
+            <Link to="/booking">Browse</Link>
+          </button>
         </div>
         <div className="service barber left-part">
           <img src={barber} alt="barber" />
           <h3>BARBER</h3>
-          <button>Browse</button>
+          <button>
+            <Link to="/booking">Browse</Link>
+          </button>
         </div>
         <div className="service color left-part">
           <img src={colors} alt="barber" />
           <h3>COLOR</h3>
-          <button>Browse</button>
+          <button>
+            <Link to="/booking">Browse</Link>
+          </button>
         </div>
         <div className="service eyelashes left-part">
           <img src={lashes} alt="barber" />
           <h3>EYELASHES</h3>
-          <button>Browse</button>
+          <button>
+            <Link to="/booking">Browse</Link>
+          </button>
         </div>
         <div className="service facials">
           <img src={facial} alt="barber" />
           <h3>FACIALS</h3>
-          <button>Browse</button>
+          <button>
+            <Link to="/booking">Browse</Link>
+          </button>
         </div>
         <div className="service braids right-part ">
           <img src={braids} alt="barber" />
           <h3>BRAIDS</h3>
-          <button>Browse</button>
+          <button>
+            <Link to="/booking">Browse</Link>
+          </button>
         </div>
         <div className="service natural left-part">
           <img src={natural} alt="barber" />
           <h3>NATURAL</h3>
-          <button>Browse</button>
+          <button>
+            <Link to="/booking">Browse</Link>
+          </button>
         </div>
         <div className="service nails left-part">
           <img src={nails} alt="barber" />
           <h3>NAILS</h3>
-          <button>Browse</button>
+          <button>
+            <Link to="/booking">Browse</Link>
+          </button>
         </div>
       </div>
       <div className="why">
@@ -174,7 +194,9 @@ function Home() {
         <div className="olive-shop">
           <h2>PRODUCTS WE DELIVER TO YOU</h2>
           <p>VISIT OUR SHOP FOR THE BEST HAIR PRODUCTS</p>
-          <button>SHOP NOW</button>
+          <button>
+            <Link to="/shop">SHOP NOW</Link>
+          </button>
         </div>
       </div>
       <div className="pro">
@@ -184,7 +206,9 @@ function Home() {
           <span className="pro-1-p">A PRO?</span>
         </div>
         <div className="pro-2">
-          <button>START BUSINESS</button>
+          <button>
+            <Link to="/set-up">START BUSINESS</Link>
+          </button>
         </div>
       </div>
       <div className="clients">
@@ -296,9 +320,15 @@ function Home() {
           <div className="quick">
             <h3>Quick Links</h3>
             <ul>
-              <li>Shop</li>
-              <li>Barber</li>
-              <li>Beauty Professional</li>
+              <li>
+                <Link to="/shop">Shop</Link>
+              </li>
+              <li>
+                <Link to="/set-up">Barber?</Link>
+              </li>
+              <li>
+                <Link to="/set-up">Beauty Professional</Link>
+              </li>
             </ul>
           </div>
           <div className="talk">

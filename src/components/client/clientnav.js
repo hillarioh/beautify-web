@@ -6,7 +6,9 @@ function Nav() {
   return (
     <div className="service-nav">
       <h1>
-        COMPANY<span>LOGO</span>
+        <Link to="/">
+          COMPANY<span>LOGO</span>
+        </Link>
       </h1>
       <ul>
         <li style={{ background: "#EAE8E8" }}>
