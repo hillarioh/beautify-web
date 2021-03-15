@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import ellipse from "../../assets/images/ellipse.png";
 import mail from "../../assets/images/mail.png";
 import admini from "../../assets/images/admin.png";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 
 function Profile() {
+  let match = useRouteMatch();
   return (
     <>
       <div className="client-body">
@@ -16,7 +17,7 @@ function Profile() {
         <div className="service-info">
           <div className="title-body">
             <h2>Service History</h2>
-            <Link to="/client/service/mandy">SErvice provider</Link>
+            <Link to={`${match.url}/service/mandy`}>Service provider</Link>
           </div>
           <div className="prof-details">
             <div className="blank-pic"></div>

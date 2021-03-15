@@ -6,13 +6,13 @@ function Nav() {
   return (
     <div className="service-nav">
       <h1>
-        <Link to="/">
+        <Link to="/user">
           COMPANY<span>LOGO</span>
         </Link>
       </h1>
       <ul>
         <li style={{ background: "#EAE8E8" }}>
-          <Link to={`${match.url}/profile`}>PROFILE</Link>
+          <Link to={`${match.url}`}>PROFILE</Link>
         </li>
         <li>
           <Link to={`${match.url}/wallet`}>WALLET</Link>

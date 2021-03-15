@@ -6,7 +6,7 @@ import Dashboard from "./dashboard";
 import Wallet from "./wallet";
 import Appointment from "./appointment";
 
-function User() {
+function ServiceProvider() {
   let match = useRouteMatch();
   return (
     <div className="service-page">
@@ -22,4 +22,4 @@ function User() {
   );
 }
 
-export default User;
+export default ServiceProvider;

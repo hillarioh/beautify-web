@@ -11,8 +11,7 @@ import Login from "./components/login/login";
 import SignUp from "./components/register/register";
 import UserProfile from "./components/services/userprofile";
 import SetUpBiz from "./components/register/setupbiz";
-import User from "./components/services/user";
-import Client from "./components/client/client";
+import LoggedHome from "./components/loggedhome";
 import { ProtectedClientRoute, ProtectedServiceRoute } from "./ProtectedRoute";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -38,10 +37,10 @@ function App() {
         <Route path="/set-up" component={SetUpBiz} />
         <Route path="/booking" component={Book} />
         <ProtectedServiceRoute
-          path="/user"
+          path="/service-provider"
           authDetails={authDetails}
           logout={logout}
-          component={User}
+          component={LoggedHome}
         />
         <Route path="/pay" component={Pay} />
         <Route path="/shop/:category/:item" component={ProductItem} />
@@ -51,9 +50,9 @@ function App() {
         <Route path="/" exact component={Home} />
         <ProtectedClientRoute
           authDetails={authDetails}
-          path="/client"
+          path="/user"
           logout={logout}
-          component={Client}
+          component={LoggedHome}
         />
         <Route path="*">
           <div>404 Not found </div>

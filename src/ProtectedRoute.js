@@ -3,8 +3,8 @@ import { Route, Redirect } from "react-router-dom";
 
 function ProtectedClientRoute({
   component: Component,
-  authDetails: authDetails,
-  logout: logout,
+  authDetails,
+  logout,
   ...rest
 }) {
   return (
@@ -12,7 +12,7 @@ function ProtectedClientRoute({
       {...rest}
       render={(props) => {
         if (authDetails.isAuthenticated && authDetails.userType === "client") {
-          return <Component logout={logout} />;
+          return <Component logout={logout} type="client" />;
         } else {
           return (
             <Redirect
@@ -30,16 +30,19 @@ function ProtectedClientRoute({
 
 function ProtectedServiceRoute({
   component: Component,
-  authDetails: authDetails,
-  logout: logout,
+  authDetails,
+  logout,
   ...rest
 }) {
   return (
     <Route
       {...rest}
       render={(props) => {
-        if (authDetails.isAuthenticated && authDetails.userType === "service") {
-          return <Component logout={logout} />;
+        if (
+          authDetails.isAuthenticated &&
+          authDetails.userType === "serviceProvider"
+        ) {
+          return <Component logout={logout} type="serviceProvider" />;
         } else {
           return (
             <Redirect

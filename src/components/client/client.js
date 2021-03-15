@@ -21,7 +21,6 @@ function Client() {
           path={`${match.path}/service/:servicerId`}
           component={ServiceProvider}
         />
-        <Route path={`${match.path}/profile`} component={Profile} />
         <Route path={`${match.path}/wallet`} component={Wallet} />
         <Route path={`${match.path}/appointment`} component={Appointment} />
         <Route path={match.path} component={Profile} />
