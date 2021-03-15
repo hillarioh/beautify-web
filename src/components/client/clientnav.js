@@ -11,7 +11,7 @@ function Nav() {
         </Link>
       </h1>
       <ul>
-        <li style={{ background: "#EAE8E8" }}>
+        <li style={{}}>
           <Link to={`${match.url}`}>PROFILE</Link>
         </li>
         <li>

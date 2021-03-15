@@ -30,6 +30,17 @@
       li {
         flex: 1 200px;
         text-align: center;
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 900;
+          font-size: 14px;
+          cursor: pointer;
+          &:hover {
+            color: #a5a2a2;
+          }
+        }
       }
     }
   }
@@ -76,6 +87,13 @@
         margin: 1rem;
         cursor: pointer;
         outline: none;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          &:hover {
+            color: #a5a2a2;
+          }
+        }
       }
     }
     .header-2 {
@@ -139,8 +157,15 @@
         font-weight: bolder;
         padding: 12px 20px;
         background: black;
-        color: #ffffff;
+        cursor: pointer;
         border-radius: 25px;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+        }
+        &:hover {
+          background: #a5a2a2;
+        }
       }
     }
 
@@ -199,7 +224,11 @@
       }
       button {
         background: #ffffff;
-        color: black;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
       }
     }
 
@@ -240,7 +269,10 @@
       }
       button {
         background: #ffffff;
-        color: black;
+        a {
+          text-decoration: none;
+          color: black;
+        }
       }
     }
 
@@ -359,12 +391,18 @@
       }
       button {
         background: black;
-        color: #eae8e8;
-        // border: none;
         padding: 10px 22px;
         border-radius: 25px;
         font-size: 24px;
+        cursor: pointer;
         font-family: "Josefin Sans", sans-serif;
+        a {
+          text-decoration: none;
+          color: #eae8e8;
+        }
+        &:hover {
+          background: #393b3d;
+        }
       }
     }
   }
@@ -386,13 +424,20 @@
     .pro-2 {
       button {
         background: #be5050;
-        color: #eae8e8;
+        cursor: pointer;
         border: none;
         padding: 14px 16px;
         border-radius: 15px;
         vertical-align: middle;
         font-size: 20px;
         font-family: "Josefin Sans", sans-serif;
+        a {
+          text-decoration: none;
+          color: #eae8e8;
+        }
+        &:hover {
+          background: #be5050c7;
+        }
       }
     }
   }
@@ -662,6 +707,13 @@
             font-weight: 800;
             margin-bottom: 6px;
             cursor: pointer;
+            a {
+              text-decoration: none;
+              color: #333;
+              &:hover {
+                color: #47525d;
+              }
+            }
           }
         }
       }

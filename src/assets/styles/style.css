@@ -48,6 +48,19 @@
   text-align: center;
 }
 
+.home-page nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.home-page nav ul li a:hover {
+  color: #a5a2a2;
+}
+
 .home-page .header {
   padding-top: 16rem;
   margin-left: 4rem;
@@ -100,6 +113,15 @@
   margin: 1rem;
   cursor: pointer;
   outline: none;
+}
+
+.home-page .header .header-1 button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.home-page .header .header-1 button a:hover {
+  color: #a5a2a2;
 }
 
 .home-page .header .header-2 {
@@ -170,8 +192,17 @@
   font-weight: bolder;
   padding: 12px 20px;
   background: black;
-  color: #ffffff;
+  cursor: pointer;
   border-radius: 25px;
+}
+
+.home-page .services .service button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.home-page .services .service button:hover {
+  background: #a5a2a2;
 }
 
 .home-page .services .left-part h3 {
@@ -246,6 +277,10 @@
 
 .home-page .services .color button {
   background: #ffffff;
+}
+
+.home-page .services .color button a {
+  text-decoration: none;
   color: black;
 }
 
@@ -308,6 +343,10 @@
 
 .home-page .services .braids button {
   background: #ffffff;
+}
+
+.home-page .services .braids button a {
+  text-decoration: none;
   color: black;
 }
 
@@ -470,11 +509,20 @@
 
 .home-page .olive-oil .olive-shop button {
   background: black;
-  color: #eae8e8;
   padding: 10px 22px;
   border-radius: 25px;
   font-size: 24px;
+  cursor: pointer;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.home-page .olive-oil .olive-shop button a {
+  text-decoration: none;
+  color: #eae8e8;
+}
+
+.home-page .olive-oil .olive-shop button:hover {
+  background: #393b3d;
 }
 
 .home-page .pro {
@@ -508,13 +556,22 @@
 
 .home-page .pro .pro-2 button {
   background: #be5050;
-  color: #eae8e8;
+  cursor: pointer;
   border: none;
   padding: 14px 16px;
   border-radius: 15px;
   vertical-align: middle;
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.home-page .pro .pro-2 button a {
+  text-decoration: none;
+  color: #eae8e8;
+}
+
+.home-page .pro .pro-2 button:hover {
+  background: #be5050c7;
 }
 
 .home-page .clients {
@@ -886,6 +943,15 @@
   font-weight: 800;
   margin-bottom: 6px;
   cursor: pointer;
+}
+
+.home-page .footer .contact .quick ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.home-page .footer .contact .quick ul li a:hover {
+  color: #47525d;
 }
 
 .home-page .footer .contact .talk {
@@ -1495,6 +1561,11 @@
   padding: 2rem;
 }
 
+.service-page .service-nav h1 a {
+  text-decoration: none;
+  color: black;
+}
+
 .service-page .service-nav ul {
   list-style: none;
   display: -webkit-box;
@@ -1510,6 +1581,11 @@
   padding: 1rem 2rem;
   font-size: 16px;
   font-weight: 800;
+}
+
+.service-page .service-nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 .service-page .service-body {
@@ -2887,7 +2963,7 @@
 }
 
 .client-login .login .clgn button {
-  background: black;
+  background: #000000a8;
   color: white;
   font-size: 18px;
   padding: 8px 32px;
@@ -2897,6 +2973,15 @@
   outline: none;
   cursor: pointer;
   font-weight: 600;
+}
+
+.client-login .login .clgn button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.client-login .login .clgn button:hover {
+  background: #be5050;
 }
 
 .client-login .login .clgn h4 {
@@ -2936,6 +3021,15 @@
   font-weight: 600;
 }
 
+.client-login .login .lgn button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.client-login .login .lgn button:hover {
+  background: #be5050;
+}
+
 .client-login .login .lgn h4 {
   margin: 1rem;
   font-size: 15px;
@@ -2967,6 +3061,11 @@
   padding: 2rem;
 }
 
+.client-page .service-nav h1 a {
+  text-decoration: none;
+  color: black;
+}
+
 .client-page .service-nav ul {
   list-style: none;
   display: -webkit-box;
@@ -2982,6 +3081,15 @@
   padding: 1rem 2rem;
   font-size: 16px;
   font-weight: 800;
+}
+
+.client-page .service-nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.client-page .service-nav ul li a:hover {
+  color: #515961;
 }
 
 .client-page .client-body {
