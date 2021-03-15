@@ -5,6 +5,7 @@ import Profile from "./profile";
 import Wallet from "./wallet";
 import Appointment from "./appointment";
 import ServiceProvider from "./serviceprovider";
+import { withRouter } from "react-router-dom";
 
 function Logout() {
   return <div>LOGOUT</div>;
@@ -29,4 +30,4 @@ function Client() {
   );
 }
 
-export default Client;
+export default withRouter(Client);

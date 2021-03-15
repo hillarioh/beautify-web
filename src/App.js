@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./assets/styles/style.css";
 import Shop from "./components/Shop/shop";
 import Category from "./components/Shop/category";
@@ -12,9 +13,22 @@ import UserProfile from "./components/services/userprofile";
 import SetUpBiz from "./components/register/setupbiz";
 import User from "./components/services/user";
 import Client from "./components/client/client";
+import { ProtectedClientRoute, ProtectedServiceRoute } from "./ProtectedRoute";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  const [authDetails, setIsAuthenticated] = useState({
+    isAuthenticated: true,
+    userType: "client",
+  });
+
+  const login = () => {
+    setIsAuthenticated({ ...authDetails, isAuthenticated: true });
+  };
+
+  const logout = () => {
+    setIsAuthenticated({ ...authDetails, isAuthenticated: false });
+  };
   return (
     <Router>
       <Switch>
@@ -23,14 +37,27 @@ function App() {
         <Route path="/user-profile" component={UserProfile} />
         <Route path="/set-up" component={SetUpBiz} />
         <Route path="/booking" component={Book} />
-        <Route path="/client" component={Client} />
-        <Route path="/user" component={User} />
+        <ProtectedServiceRoute
+          path="/user"
+          authDetails={authDetails}
+          logout={logout}
+          component={User}
+        />
         <Route path="/pay" component={Pay} />
         <Route path="/shop/:category/:item" component={ProductItem} />
         <Route path="/shop/:category" exact component={Category} />
         <Route path="/shop" exact component={Shop} />
         <Route path="/checkout" component={Checkout} />
         <Route path="/" exact component={Home} />
+        <ProtectedClientRoute
+          authDetails={authDetails}
+          path="/client"
+          logout={logout}
+          component={Client}
+        />
+        <Route path="*">
+          <div>404 Not found </div>
+        </Route>
       </Switch>
     </Router>
   );
