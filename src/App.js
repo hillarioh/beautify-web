@@ -12,7 +12,11 @@ import SignUp from "./components/register/register";
 import UserProfile from "./components/services/userprofile";
 import SetUpBiz from "./components/register/setupbiz";
 import LoggedHome from "./components/loggedhome";
-import { ProtectedClientRoute, ProtectedServiceRoute } from "./ProtectedRoute";
+import {
+  ProtectedClientRoute,
+  ProtectedServiceRoute,
+  ProtectedRoute,
+} from "./ProtectedRoute";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -35,7 +39,12 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/user-profile" component={UserProfile} />
         <Route path="/set-up" component={SetUpBiz} />
-        <Route path="/booking" component={Book} />
+        <ProtectedRoute
+          path="/book"
+          authDetails={authDetails}
+          logout={logout}
+          component={Book}
+        />
         <ProtectedServiceRoute
           path="/service-provider"
           authDetails={authDetails}

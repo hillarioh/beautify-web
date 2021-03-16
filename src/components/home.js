@@ -89,56 +89,56 @@ function Home() {
           <img src={haircuts} alt="haircut" />
           <h3>HAIRCUTS</h3>
           <button>
-            <Link to="/booking">Browse</Link>
+            <Link to="/book">Browse</Link>
           </button>
         </div>
         <div className="service barber left-part">
           <img src={barber} alt="barber" />
           <h3>BARBER</h3>
           <button>
-            <Link to="/booking">Browse</Link>
+            <Link to="/book">Browse</Link>
           </button>
         </div>
         <div className="service color left-part">
           <img src={colors} alt="barber" />
           <h3>COLOR</h3>
           <button>
-            <Link to="/booking">Browse</Link>
+            <Link to="/book">Browse</Link>
           </button>
         </div>
         <div className="service eyelashes left-part">
           <img src={lashes} alt="barber" />
           <h3>EYELASHES</h3>
           <button>
-            <Link to="/booking">Browse</Link>
+            <Link to="/book">Browse</Link>
           </button>
         </div>
         <div className="service facials">
           <img src={facial} alt="barber" />
           <h3>FACIALS</h3>
           <button>
-            <Link to="/booking">Browse</Link>
+            <Link to="/book">Browse</Link>
           </button>
         </div>
         <div className="service braids right-part ">
           <img src={braids} alt="barber" />
           <h3>BRAIDS</h3>
           <button>
-            <Link to="/booking">Browse</Link>
+            <Link to="/book">Browse</Link>
           </button>
         </div>
         <div className="service natural left-part">
           <img src={natural} alt="barber" />
           <h3>NATURAL</h3>
           <button>
-            <Link to="/booking">Browse</Link>
+            <Link to="/book">Browse</Link>
           </button>
         </div>
         <div className="service nails left-part">
           <img src={nails} alt="barber" />
           <h3>NAILS</h3>
           <button>
-            <Link to="/booking">Browse</Link>
+            <Link to="/book">Browse</Link>
           </button>
         </div>
       </div>

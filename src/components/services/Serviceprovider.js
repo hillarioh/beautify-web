@@ -5,6 +5,7 @@ import Nav from "./nav";
 import Dashboard from "./dashboard";
 import Wallet from "./wallet";
 import Appointment from "./appointment";
+import Provider from "../client/serviceprovider";
 
 function ServiceProvider() {
   let match = useRouteMatch();
@@ -12,6 +13,10 @@ function ServiceProvider() {
     <div className="service-page">
       <Nav />
       <Switch>
+        <Route
+          path={`${match.path}/service/:servicerId`}
+          component={Provider}
+        />
         <Route path={`${match.path}/profile`} component={Profile} />
         <Route path={`${match.path}/dashboard`} component={Dashboard} />
         <Route path={`${match.path}/wallet`} component={Wallet} />

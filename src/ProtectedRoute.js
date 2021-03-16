@@ -58,4 +58,31 @@ function ProtectedServiceRoute({
   );
 }
 
-export { ProtectedClientRoute, ProtectedServiceRoute };
+function ProtectedRoute({
+  component: Component,
+  authDetails,
+  logout,
+  ...rest
+}) {
+  return (
+    <Route
+      {...rest}
+      render={(props) => {
+        if (authDetails.isAuthenticated) {
+          return <Component logout={logout} type={authDetails.userType} />;
+        } else {
+          return (
+            <Redirect
+              to={{
+                pathname: "/login",
+                state: { from: props.location },
+              }}
+            />
+          );
+        }
+      }}
+    />
+  );
+}
+
+export { ProtectedClientRoute, ProtectedServiceRoute, ProtectedRoute };
