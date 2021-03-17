@@ -42,8 +42,12 @@
 }
 
 .home-page nav {
-  padding: 2rem;
-  position: relative;
+  padding: 3rem 2rem;
+  position: fixed;
+  width: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  z-index: 100000;
 }
 
 .home-page nav ul {
@@ -52,6 +56,9 @@
   display: flex;
   list-style: none;
   margin: 0;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .home-page nav ul li {
@@ -66,11 +73,17 @@
   color: black;
   font-family: "Manjari", sans-serif;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
 }
 
 .home-page nav ul li a:hover {
   color: #a5a2a2;
+}
+
+.home-page .sticky {
+  padding: 2rem;
+  background: #ffffff;
 }
 
 .home-page .header {

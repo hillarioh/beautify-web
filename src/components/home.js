@@ -30,12 +30,16 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
 
 function Home() {
+  window.addEventListener("scroll", (e) => {
+    let header = document.querySelector(".nav");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
   return (
     <div className="home-page">
       <div className="red-bg">
         <img src={scissors} alt="scissors" />
       </div>
-      <nav>
+      <nav className="nav">
         <ul>
           <li>
             <Link to="/set-up">Barber?</Link>
