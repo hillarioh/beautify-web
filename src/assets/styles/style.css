@@ -1,11 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@font-face {
+  font-family: "Manjari";
+  font-weight: 100;
+  font-display: block;
+  src: url("../font/Manjari-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Manjari";
+  font-weight: 400;
+  font-display: block;
+  src: url("../font/Manjari-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Manjari";
+  font-weight: 600;
+  font-display: block;
+  src: url("../font/Manjari-Bold.ttf");
+}
+
 .home-page {
   background: #eae8e8;
   position: relative;
@@ -51,9 +64,8 @@
 .home-page nav ul li a {
   text-decoration: none;
   color: black;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 14px;
+  font-family: "Manjari", sans-serif;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -86,7 +98,7 @@
 
 .home-page .header .header-1 .top p {
   font-size: 56px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .home-page .header .header-1 .top .beauty {
@@ -103,7 +115,6 @@
 .home-page .header .header-1 button {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  font-family: "Josefin Sans", sans-serif;
   padding: 10px 26px;
   font-size: 14px;
   color: white;
@@ -140,7 +151,7 @@
 }
 
 .home-page .step-swagger {
-  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   margin: 5rem;
 }
 
@@ -175,21 +186,19 @@
   position: relative;
   background: #ffffff;
   border-radius: 25px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .home-page .services .service h3 {
   position: absolute;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .home-page .services .service button {
   position: absolute;
   border: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: bolder;
+  font-size: 16px;
+  font-family: "Manjari", sans-serif;
   padding: 12px 20px;
   background: black;
   cursor: pointer;
@@ -393,17 +402,18 @@
 .home-page .why .why-title {
   text-align: center;
   margin-bottom: 4rem;
-  font-family: "Josefin Sans", sans-serif;
   padding-top: 2rem;
 }
 
 .home-page .why .why-title h2 {
-  font-size: 42px;
+  font-size: 52px;
+  font-weight: 600;
   color: #be5050;
 }
 
 .home-page .why .why-title h3 {
-  font-size: 32px;
+  font-size: 42px;
+  font-weight: 600;
 }
 
 .home-page .why .why-body {
@@ -413,7 +423,6 @@
 }
 
 .home-page .why .why-body .why-item {
-  font-family: "Montserrat", sans-serif;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -428,9 +437,14 @@
 
 .home-page .why .why-body .why-item h2 {
   margin: 1rem;
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 32px;
+  font-weight: 600;
   color: #be5050;
+}
+
+.home-page .why .why-body .why-item p {
+  font-size: 18px;
+  font-weight: 200;
 }
 
 .home-page .olive-oil {
@@ -446,10 +460,8 @@
 }
 
 .home-page .olive-oil .olive-title {
-  font-family: "Josefin Sans", sans-serif;
-  font-style: normal;
   font-weight: 800;
-  font-size: 93px;
+  font-size: 100px;
   color: #ffffff;
   padding-left: 1rem;
   -webkit-box-flex: 1;
@@ -495,7 +507,6 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-page .olive-oil .olive-shop h2 {
@@ -513,7 +524,6 @@
   border-radius: 25px;
   font-size: 24px;
   cursor: pointer;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-page .olive-oil .olive-shop button a {
@@ -535,7 +545,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-page .pro .pro-1 {
@@ -546,7 +555,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 36px;
+  font-size: 46px;
+  font-weight: 600;
   margin-right: 6rem;
 }
 
@@ -558,16 +568,17 @@
   background: #be5050;
   cursor: pointer;
   border: none;
-  padding: 14px 16px;
-  border-radius: 15px;
+  padding: 14px 22px 4px 22px;
+  border-radius: 8px;
   vertical-align: middle;
   font-size: 20px;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-page .pro .pro-2 button a {
   text-decoration: none;
   color: #eae8e8;
+  font-weight: 600;
+  vertical-align: middle;
 }
 
 .home-page .pro .pro-2 button:hover {
@@ -580,6 +591,7 @@
 
 .home-page .clients h1 {
   margin-bottom: 8rem;
+  font-weight: 600;
 }
 
 .home-page .clients .client-list {
@@ -610,11 +622,11 @@
 }
 
 .home-page .clients .client-list .client-item p {
-  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 .home-page .browse {
-  font-family: "Josefin Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,7 +711,7 @@
 
 .home-page .download .down-1 p {
   font-size: 46px;
-  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
 }
 
 .home-page .download .down-1 div {
@@ -737,7 +749,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 500px;
-  font-family: "Josefin Sans", sans-serif;
   -webkit-transform: rotate(10deg) translate(-2rem, -4rem);
           transform: rotate(10deg) translate(-2rem, -4rem);
 }
@@ -804,7 +815,6 @@
   padding: 6px 0;
   border: none;
   border-radius: 10px;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .home-page .footer {
@@ -890,16 +900,17 @@
 }
 
 .home-page .footer .bio h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
   font-size: 26px;
   color: #be5050;
   margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 .home-page .footer .bio p {
-  font-family: "Montserrat", sans-serif;
   line-height: 24px;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .home-page .footer .contact {
@@ -926,10 +937,11 @@
 }
 
 .home-page .footer .contact .quick h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
   font-size: 26px;
   color: #be5050;
   margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 .home-page .footer .contact .quick ul {
@@ -937,10 +949,6 @@
 }
 
 .home-page .footer .contact .quick ul li {
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 24px;
-  font-size: 24px;
-  font-weight: 800;
   margin-bottom: 6px;
   cursor: pointer;
 }
@@ -948,6 +956,9 @@
 .home-page .footer .contact .quick ul li a {
   text-decoration: none;
   color: #333;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .home-page .footer .contact .quick ul li a:hover {
@@ -963,10 +974,11 @@
 }
 
 .home-page .footer .contact .talk h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
   font-size: 26px;
   color: #be5050;
   margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 .home-page .footer .contact .talk ul {
@@ -974,10 +986,9 @@
 }
 
 .home-page .footer .contact .talk ul li {
-  font-family: "Josefin Sans", sans-serif;
   line-height: 24px;
-  font-size: 24px;
-  font-weight: 800;
+  font-weight: 500;
+  font-size: 18px;
   margin-bottom: 6px;
   cursor: pointer;
 }
@@ -988,6 +999,15 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 2 / 1 / 3 / 3;
+}
+
+@media (min-width: 900px) and (max-width: 1098px) {
+  .home-page .red-bg {
+    width: 300px;
+  }
+  .home-page .red-bg img {
+    width: 300px;
+  }
 }
 
 .product-page {
@@ -5149,5 +5169,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Manjari", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
