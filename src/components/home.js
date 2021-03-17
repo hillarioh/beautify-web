@@ -71,9 +71,7 @@ function Home() {
             <h3>Barber Appointments</h3>
           </div>
 
-          <button>
-            <Link to="/signup">Get Started</Link>
-          </button>
+          <Link to="/signup">Get Started</Link>
         </div>
 
         <div className="header-2">
