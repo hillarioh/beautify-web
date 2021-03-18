@@ -84,8 +84,8 @@
 .home-page .sticky {
   padding: 1.5rem;
   background: #ffffff;
-  -webkit-box-shadow: 1px 7px 11px -1px #c1c1c1;
-          box-shadow: 1px 7px 11px -1px #c1c1c1;
+  -webkit-box-shadow: 1px 3px 11px -1px #c1c1c1;
+          box-shadow: 1px 3px 11px -1px #c1c1c1;
 }
 
 .home-page .header {
@@ -1246,7 +1246,7 @@
 }
 
 .product-page .featured h4 {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   font-size: 20px;
 }
 
@@ -1259,10 +1259,9 @@
 }
 
 .product-page .featured .featured-products .featured-item {
-  -webkit-box-flex: 33%;
-      -ms-flex: 33%;
-          flex: 33%;
-  max-width: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 500px;
 }
 
