@@ -1065,7 +1065,6 @@
 }
 
 .product-page .product-top .product-top-title {
-  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 55px;
@@ -1110,8 +1109,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1122,8 +1119,23 @@
 }
 
 .product-page .brand-logo .brand-item {
-  width: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
+}
+
+.product-page .brand-logo .brand-item .marini {
+  width: 120px;
+  height: 120px;
+}
+
+.product-page .brand-logo .brand-item .akusi {
+  width: "117px";
+}
+
+.product-page .brand-logo .brand-item .laguah {
+  width: 190px;
 }
 
 .product-page .shop-logo {
@@ -1244,7 +1256,6 @@
 }
 
 .product-page .featured h4 {
-  margin-bottom: 5rem;
   font-size: 20px;
 }
 
@@ -1252,15 +1263,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .product-page .featured .featured-products .featured-item {
-  -webkit-box-flex: 33%;
-      -ms-flex: 33%;
-          flex: 33%;
-  max-width: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 500px;
 }
 
@@ -1273,6 +1281,10 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.product-page .featured .featured-products .featured-item .featured-item-img img {
+  width: 100%;
 }
 
 .product-page .featured .featured-products .featured-item .featured-item-details {
@@ -1304,36 +1316,76 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .product-page {
-    max-width: 1199px;
-    min-height: 100vh;
+  .product-page .product-top .product-top-title {
+    font-size: 45px;
+  }
+  .product-page .product-top .product-top-img1 {
+    left: 30.89%;
+    bottom: -13%;
+    width: 240px;
+    height: 180px;
+  }
+  .product-page .product-top .product-top-img2 {
+    left: 45.21%;
+    bottom: -33%;
+    width: 140px;
+    height: 500px;
+  }
+  .product-page .product-top .product-top-img3 {
+    left: 54.22%;
+    bottom: 0%;
+    width: 360px;
+    height: 200px;
+  }
+  .product-page .featured .featured-products .featured-item .featured-item-img img {
+    width: 250px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .product-page {
-    max-width: 991px;
-    min-height: 190vh;
-  }
   .product-page .product-top {
-    height: 260px;
-    width: 600px;
+    height: 250px;
   }
   .product-page .product-top .product-top-title {
-    font-weight: 600;
-    font-size: 40px;
+    font-size: 32px;
   }
-  .product-page .product-top .product-top-title .product-top-img1 {
-    width: 100px;
-    height: 80px;
+  .product-page .product-top .product-top-img1 {
+    left: 30.89%;
+    bottom: -13%;
+    width: 190px;
+    height: 150px;
   }
-  .product-page .product-top .product-top-title .product-top-img2 {
-    width: 50px;
-    height: 300px;
+  .product-page .product-top .product-top-img2 {
+    left: 45.21%;
+    bottom: -33%;
+    width: 90px;
+    height: 430px;
   }
-  .product-page .product-top .product-top-title .product-top-img3 {
-    width: 70px;
-    height: 120px;
+  .product-page .product-top .product-top-img3 {
+    left: 54.22%;
+    bottom: 0%;
+    width: 270px;
+    height: 156px;
+  }
+  .product-page .brand-logo .brand-item .marini {
+    width: 90px;
+    height: 90px;
+  }
+  .product-page .brand-logo .brand-item .akusi {
+    width: 90px;
+    height: 67px;
+  }
+  .product-page .brand-logo .brand-item .laguah {
+    width: 130px;
+  }
+  .product-page .featured {
+    padding: 0;
+  }
+  .product-page .featured .featured-products .featured-item {
+    height: 440px;
+  }
+  .product-page .featured .featured-products .featured-item .featured-item-img img {
+    width: 250px;
   }
 }
 
@@ -5217,5 +5269,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Manjari", sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */

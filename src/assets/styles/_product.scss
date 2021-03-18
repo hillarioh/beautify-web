@@ -31,7 +31,6 @@
     position: relative;
 
     .product-top-title {
-      font-family: "Josefin Sans", sans-serif;
       font-style: normal;
       font-weight: 800;
       font-size: 55px;
@@ -70,14 +69,24 @@
 
   .brand-logo {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: center;
     margin-top: 5rem;
     align-items: center;
 
     .brand-item {
-      width: 200px;
+      flex: 1;
       text-align: center;
+      .marini {
+        width: 120px;
+        height: 120px;
+      }
+      .akusi {
+        width: "117px";
+      }
+      .laguah {
+        width: 190px;
+      }
     }
   }
 
@@ -175,16 +184,13 @@
     margin-top: 6rem;
     padding: 0 2rem;
     h4 {
-      margin-bottom: 5rem;
       font-size: 20px;
     }
     .featured-products {
       display: flex;
-      flex-wrap: wrap;
 
       .featured-item {
-        flex: 33%;
-        max-width: 33%;
+        flex: 1;
         height: 500px;
 
         .featured-item-img {
@@ -192,6 +198,9 @@
           height: 60%;
           display: flex;
           align-items: flex-end;
+          img {
+            width: 100%;
+          }
         }
         .featured-item-details {
           font-family: "Josefin Sans", sans-serif;
@@ -227,35 +236,97 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .product-page {
-    max-width: 1199px;
-    min-height: 100vh;
+    .product-top {
+      .product-top-title {
+        font-size: 45px;
+      }
+      .product-top-img1 {
+        left: 30.89%;
+        bottom: -13%;
+        width: 240px;
+        height: 180px;
+      }
+
+      .product-top-img2 {
+        left: 45.21%;
+        bottom: -33%;
+        width: 140px;
+        height: 500px;
+      }
+
+      .product-top-img3 {
+        left: 54.22%;
+        bottom: 0%;
+        width: 360px;
+        height: 200px;
+      }
+    }
+    .featured {
+      .featured-products {
+        .featured-item {
+          .featured-item-img {
+            img {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .product-page {
-    max-width: 991px;
-    min-height: 190vh;
-
-    .product-nav {
-    }
-
     .product-top {
-      height: 260px;
-      width: 600px;
+      height: 250px;
       .product-top-title {
-        font-weight: 600;
-        font-size: 40px;
-        .product-top-img1 {
-          width: 100px;
-          height: 80px;
+        font-size: 32px;
+      }
+      .product-top-img1 {
+        left: 30.89%;
+        bottom: -13%;
+        width: 190px;
+        height: 150px;
+      }
+
+      .product-top-img2 {
+        left: 45.21%;
+        bottom: -33%;
+        width: 90px;
+        height: 430px;
+      }
+
+      .product-top-img3 {
+        left: 54.22%;
+        bottom: 0%;
+        width: 270px;
+        height: 156px;
+      }
+    }
+    .brand-logo {
+      .brand-item {
+        .marini {
+          width: 90px;
+          height: 90px;
         }
-        .product-top-img2 {
-          width: 50px;
-          height: 300px;
+        .akusi {
+          width: 90px;
+          height: 67px;
         }
-        .product-top-img3 {
-          width: 70px;
-          height: 120px;
+        .laguah {
+          width: 130px;
+        }
+      }
+    }
+    .featured {
+      padding: 0;
+      .featured-products {
+        .featured-item {
+          height: 440px;
+          .featured-item-img {
+            img {
+              width: 250px;
+            }
+          }
         }
       }
     }

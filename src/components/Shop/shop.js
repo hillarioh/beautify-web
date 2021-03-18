@@ -47,17 +47,13 @@ function Shop() {
         <div className="brand-item">SHOP</div>
         <div className="brand-item">BRANDS</div>
         <div className="brand-item">
-          <img src={marini} alt="brand 1" style={{ width: 120, height: 120 }} />
+          <img src={marini} alt="brand 1" className="marini" />
         </div>
         <div className="brand-item">
-          <img
-            src={akusi}
-            alt="brand 2"
-            style={{ width: 190, marginLeft: -40 }}
-          />
+          <img src={akusi} alt="brand 2" className="akusi" />
         </div>
         <div className="brand-item">
-          <img src={laguah} alt="brand 3" style={{ width: 190 }} />
+          <img src={laguah} alt="brand 3" className="laguah" />
         </div>
       </div>
       <div className="shop-logo">
@@ -115,11 +111,7 @@ function Shop() {
         <div className="featured-products">
           <div className="featured-item">
             <div className="featured-item-img">
-              <img
-                src={fimg1}
-                alt="featured product 1"
-                style={{ height: 230, width: 300 }}
-              />
+              <img src={fimg1} alt="featured product 1" style={{}} />
             </div>
             <div className="featured-item-details">
               <p>Clear Scalp hair product</p>
@@ -129,11 +121,7 @@ function Shop() {
           </div>
           <div className="featured-item">
             <div className="featured-item-img">
-              <img
-                src={fimg2}
-                alt="featured product 1"
-                style={{ height: 260, width: 350 }}
-              />
+              <img src={fimg2} alt="featured product 1" style={{}} />
             </div>
             <div className="featured-item-details">
               <p>Clear Scalp hair product</p>
@@ -143,11 +131,7 @@ function Shop() {
           </div>
           <div className="featured-item">
             <div className="featured-item-img">
-              <img
-                src={fimg3}
-                alt="featured product 1"
-                style={{ height: 300, width: 300 }}
-              />
+              <img src={fimg3} alt="featured product 1" style={{}} />
             </div>
             <div className="featured-item-details">
               <p>Clear Scalp hair product</p>
