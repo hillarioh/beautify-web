@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TextField, ThemeProvider, Checkbox } from "@material-ui/core";
 import { theme, useStyles } from "../theme";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
+import { Link } from "react-router-dom";
 
 function ListBusiness() {
   const classes = useStyles();
@@ -69,14 +70,14 @@ function ListBusiness() {
             <div>See facebook</div>
             <section>
               <article>
-                <button>SIGN UP</button>
+                <Link to="/login/service">SIGN UP</Link>
                 <p>
                   By signing Up you agree to the terms of service and privacy
                   policy
                 </p>
               </article>
               <article>
-                <button>LOG IN</button>
+                <Link to="/login/service">LOG IN</Link>
                 <p>Already Have an account</p>
               </article>
             </section>

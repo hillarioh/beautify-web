@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import intro from "../assets/images/intro.png";
 import scissors from "../assets/images/scissors.png";
 import haircuts from "../assets/images/haircut-service.png";
@@ -30,10 +30,13 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
 
 function Home() {
-  window.addEventListener("scroll", (e) => {
-    let header = document.querySelector(".nav");
-    header.classList.toggle("sticky", window.scrollY > 0);
-  });
+  let header = document.querySelector(".nav");
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+  }, []);
+
   return (
     <div className="home-page">
       <div className="red-bg">

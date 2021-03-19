@@ -8,6 +8,7 @@
     width: 500px;
     height: 600px;
     background: #be5050;
+    // background: #d70466;
     top: 0;
     right: 0;
     img {
@@ -89,15 +90,30 @@
         padding: 14px 24px;
         font-size: 16px;
         font-weight: 600;
-        color: #a5a2a2;
-        background: black;
+        // color: #a5a2a2;
+        color: #ffffff;
+        background: radial-gradient(
+          circle at center,
+          #ff385c 0%,
+          #e61e4d 27.5%,
+          #ff385c 100%
+        );
+        // background-image: radial-gradient(
+        //   circle at center,
+        //   #ff385c 0%,
+        //   #e61e4d 27.5%,
+        //   #e31c5f 40%,
+        //   #d70466 57.5%,
+        //   #bd1e59 75%,
+        //   #bd1e59 100%
+        // );
         border: none;
         border-radius: 8px;
         margin-bottom: 1rem;
         cursor: pointer;
         text-decoration: none;
         &:hover {
-          color: white;
+          // color: #c0b3b3;
         }
       }
     }
@@ -622,6 +638,7 @@
     grid-template-columns: repeat(2, 1fr) 2fr;
     border-bottom: 2px;
     background: #f7f7f7;
+    padding-top: 2rem;
 
     .social {
       grid-area: 1 / 1 / 2 / 2;

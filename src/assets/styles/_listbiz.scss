@@ -39,7 +39,6 @@
         justify-content: center;
         h2 {
           margin-bottom: 1rem;
-          font-family: "Josefin Sans", sans-serif;
           color: #be5050;
         }
         .service-form {
@@ -53,7 +52,6 @@
           .biz-tym {
             display: flex;
             align-items: center;
-            font-family: "Josefin Sans", sans-serif;
             span {
               flex: 1;
             }
@@ -79,7 +77,6 @@
           position: absolute;
           top: 40%;
           left: 30%;
-          transform: translate(50%);
         }
         section {
           position: absolute;
@@ -91,20 +88,19 @@
             text-align: center;
             padding: 0 1rem;
             p {
-              font-size: 14px;
-              font-family: "Montserrat", sans-serif;
+              font-size: 16px;
             }
-            button {
+            a {
+              text-decoration: none;
+              display: block;
               padding: 10px 20px;
-              margin-bottom: 1rem;
               background: black;
               color: #ffffff;
-              border: none;
               cursor: pointer;
-              font-family: "Josefin Sans", sans-serif;
               font-size: 16px;
-              outline: none;
-              border-radius: 15px;
+              font-weight: 600;
+              border-radius: 5px;
+              margin-bottom: 1rem;
             }
           }
         }
@@ -129,7 +125,6 @@
       h2 {
         margin-bottom: 2rem;
         margin-top: 1rem;
-        font-family: "Josefin Sans", sans-serif;
         color: #be5050;
       }
       .service-form {

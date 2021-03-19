@@ -133,17 +133,13 @@
   padding: 14px 24px;
   font-size: 16px;
   font-weight: 600;
-  color: #a5a2a2;
-  background: black;
+  color: #ffffff;
+  background: radial-gradient(circle at center, #ff385c 0%, #e61e4d 27.5%, #ff385c 100%);
   border: none;
   border-radius: 8px;
   margin-bottom: 1rem;
   cursor: pointer;
   text-decoration: none;
-}
-
-.home-page .header .header-1 a:hover {
-  color: white;
 }
 
 .home-page .header .header-2 {
@@ -837,6 +833,7 @@
       grid-template-columns: repeat(2, 1fr) 2fr;
   border-bottom: 2px;
   background: #f7f7f7;
+  padding-top: 2rem;
 }
 
 .home-page .footer .social {
@@ -2745,7 +2742,6 @@
 
 .list-biz .list-body .list-form .item-1 h2 {
   margin-bottom: 1rem;
-  font-family: "Josefin Sans", sans-serif;
   color: #be5050;
 }
 
@@ -2770,7 +2766,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .list-biz .list-body .list-form .item-1 .hour-form .biz-tym span {
@@ -2810,8 +2805,6 @@
   position: absolute;
   top: 40%;
   left: 30%;
-  -webkit-transform: translate(50%);
-          transform: translate(50%);
 }
 
 .list-biz .list-body .list-form .sign section {
@@ -2833,21 +2826,20 @@
 }
 
 .list-biz .list-body .list-form .sign section article p {
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
-.list-biz .list-body .list-form .sign section article button {
+.list-biz .list-body .list-form .sign section article a {
+  text-decoration: none;
+  display: block;
   padding: 10px 20px;
-  margin-bottom: 1rem;
   background: black;
   color: #ffffff;
-  border: none;
   cursor: pointer;
-  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-  outline: none;
-  border-radius: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 .list-biz .user-form {
@@ -2879,7 +2871,6 @@
 .list-biz .user-form .item-1 h2 {
   margin-bottom: 2rem;
   margin-top: 1rem;
-  font-family: "Josefin Sans", sans-serif;
   color: #be5050;
 }
 
