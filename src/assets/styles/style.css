@@ -1,22 +1,102 @@
 @font-face {
-  font-family: "Manjari";
+  font-family: "Poppins";
   font-weight: 100;
   font-display: block;
-  src: url("../font/Manjari-Thin.ttf");
+  src: url("../font/Poppins-Thin.ttf");
 }
 
 @font-face {
-  font-family: "Manjari";
+  font-family: "Poppins";
+  font-weight: 200;
+  font-display: block;
+  src: url("../font/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-display: block;
+  src: url("../font/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
   font-weight: 400;
   font-display: block;
-  src: url("../font/Manjari-Regular.ttf");
+  src: url("../font/Poppins-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Manjari";
+  font-family: "Poppins";
+  font-weight: 500;
+  font-display: block;
+  src: url("../font/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
   font-weight: 600;
   font-display: block;
-  src: url("../font/Manjari-Bold.ttf");
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-display: block;
+  src: url("../font/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-display: block;
+  src: url("../font/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-display: block;
+  src: url("../font/Poppins-Black.ttf");
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .home-page {
@@ -71,9 +151,6 @@
 .home-page nav ul li a {
   text-decoration: none;
   color: black;
-  font-family: "Manjari", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
   cursor: pointer;
 }
 
@@ -112,34 +189,17 @@
 }
 
 .home-page .header .header-1 .top p {
-  font-size: 56px;
-  font-weight: 600;
-}
-
-.home-page .header .header-1 .top .beauty {
-  font-weight: 500;
-  font-size: 42px;
-}
-
-.home-page .header .header-1 .top h3 {
-  font-size: 40px;
-  color: #a5a2a2;
-  font-weight: 400;
+  color: #858080;
 }
 
 .home-page .header .header-1 a {
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding: 14px 24px;
-  font-size: 16px;
-  font-weight: 600;
   color: #ffffff;
   background: radial-gradient(circle at center, #ff385c 0%, #e61e4d 27.5%, #ff385c 100%);
-  border: none;
   border-radius: 8px;
   margin-bottom: 1rem;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .home-page .header .header-2 {
@@ -160,17 +220,12 @@
 }
 
 .home-page .step-swagger {
-  font-weight: 300;
   margin: 5rem;
-}
-
-.home-page .step-swagger .step {
-  font-size: 51px;
 }
 
 .home-page .step-swagger .your {
   color: #030303;
-  font-size: 56px;
+  font-size: 46px;
 }
 
 .home-page .step-swagger .swag {
@@ -199,23 +254,19 @@
 
 .home-page .services .service h3 {
   position: absolute;
-  font-size: 28px;
-  font-weight: 600;
 }
 
 .home-page .services .service button {
   position: absolute;
   border: none;
-  font-size: 16px;
-  font-family: "Manjari", sans-serif;
-  padding: 12px 20px;
+  padding: 8px 20px;
   background: black;
-  cursor: pointer;
-  border-radius: 25px;
+  border-radius: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .home-page .services .service button a {
-  text-decoration: none;
   color: #ffffff;
 }
 
@@ -410,19 +461,18 @@
 
 .home-page .why .why-title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   padding-top: 2rem;
 }
 
 .home-page .why .why-title h2 {
-  font-size: 52px;
-  font-weight: 600;
   color: #be5050;
+  font-size: 52px;
 }
 
 .home-page .why .why-title h3 {
-  font-size: 42px;
-  font-weight: 600;
+  font-size: 52px;
+  line-height: 2rem;
 }
 
 .home-page .why .why-body {
@@ -440,20 +490,13 @@
 }
 
 .home-page .why .why-body .why-item img {
-  width: 72px;
-  height: 72px;
+  width: 50px;
+  height: 50px;
 }
 
-.home-page .why .why-body .why-item h2 {
+.home-page .why .why-body .why-item h3 {
   margin: 1rem;
-  font-size: 32px;
-  font-weight: 600;
   color: #be5050;
-}
-
-.home-page .why .why-body .why-item p {
-  font-size: 18px;
-  font-weight: 200;
 }
 
 .home-page .olive-oil {
@@ -469,7 +512,7 @@
 }
 
 .home-page .olive-oil .olive-title {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 100px;
   color: #ffffff;
   padding-left: 1rem;
@@ -519,28 +562,23 @@
 }
 
 .home-page .olive-oil .olive-shop h2 {
-  font-size: 35px;
+  font-weight: 700;
 }
 
-.home-page .olive-oil .olive-shop p {
-  font-size: 24px;
+.home-page .olive-oil .olive-shop h3 {
+  font-weight: 500;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 
-.home-page .olive-oil .olive-shop button {
+.home-page .olive-oil .olive-shop a {
   background: black;
   padding: 10px 22px;
-  border-radius: 25px;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.home-page .olive-oil .olive-shop button a {
-  text-decoration: none;
+  border-radius: 8px;
   color: #eae8e8;
 }
 
-.home-page .olive-oil .olive-shop button:hover {
+.home-page .olive-oil .olive-shop a:hover {
   background: #393b3d;
 }
 
@@ -564,43 +602,32 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 46px;
-  font-weight: 600;
   margin-right: 6rem;
+}
+
+.home-page .pro .pro-1 h2 {
+  font-weight: 700;
+  line-height: 2.5rem;
 }
 
 .home-page .pro .pro-1 .pro-1-p {
   color: #be5050;
 }
 
-.home-page .pro .pro-2 button {
-  background: #be5050;
-  cursor: pointer;
-  border: none;
-  padding: 14px 22px 4px 22px;
+.home-page .pro .pro-2 a {
   border-radius: 8px;
-  vertical-align: middle;
-  font-size: 20px;
-}
-
-.home-page .pro .pro-2 button a {
-  text-decoration: none;
-  color: #eae8e8;
-  font-weight: 600;
-  vertical-align: middle;
-}
-
-.home-page .pro .pro-2 button:hover {
-  background: #be5050c7;
+  background: #be5050;
+  padding: 10px 22px;
+  color: white;
 }
 
 .home-page .clients {
   margin: 4rem;
 }
 
-.home-page .clients h1 {
-  margin-bottom: 8rem;
-  font-weight: 600;
+.home-page .clients h2 {
+  margin-bottom: 4rem;
+  font-size: 32px;
 }
 
 .home-page .clients .client-list {
@@ -628,11 +655,6 @@
   border-radius: 50%;
   -webkit-transform: translateY(-45px);
           transform: translateY(-45px);
-}
-
-.home-page .clients .client-list .client-item p {
-  font-size: 18px;
-  font-weight: 200;
 }
 
 .home-page .browse {
@@ -832,8 +854,7 @@
   -ms-grid-columns: (1fr)[2] 2fr;
       grid-template-columns: repeat(2, 1fr) 2fr;
   border-bottom: 2px;
-  background: #f7f7f7;
-  padding-top: 2rem;
+  background: #f7f2f2;
 }
 
 .home-page .footer .social {
@@ -842,7 +863,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1 / 1 / 2 / 2;
-  height: 370px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -858,9 +879,9 @@
 
 .home-page .footer .social .ft-bg .twt {
   position: absolute;
-  font-size: 42px;
-  top: 1rem;
-  left: 50%;
+  font-size: 32px;
+  top: 5%;
+  left: 40%;
   -webkit-transform: translate(50%);
           transform: translate(50%);
   cursor: pointer;
@@ -868,25 +889,25 @@
 
 .home-page .footer .social .ft-bg .inst {
   position: absolute;
-  font-size: 42px;
-  top: 15%;
-  right: 22%;
+  font-size: 32px;
+  top: 10%;
+  right: 32%;
   cursor: pointer;
 }
 
 .home-page .footer .social .ft-bg .pin {
   position: absolute;
-  font-size: 42px;
-  top: 30%;
-  right: 10%;
+  font-size: 32px;
+  top: 20%;
+  right: 18%;
   cursor: pointer;
 }
 
 .home-page .footer .social .ft-bg .fab {
   position: absolute;
-  font-size: 42px;
-  top: 45%;
-  right: 7%;
+  font-size: 32px;
+  top: 32%;
+  right: 10%;
   cursor: pointer;
 }
 
@@ -894,10 +915,10 @@
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 58%;
+  top: 42%;
   border: 1px solid #707070;
   background: #eae8e8;
-  right: -2%;
+  right: -4%;
   border-radius: 50%;
   opacity: 0.62;
 }
@@ -908,21 +929,13 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / 2 / 3;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .home-page .footer .bio h3 {
-  font-weight: 600;
-  font-size: 26px;
   color: #be5050;
-  margin-bottom: 1rem;
-  text-decoration: underline;
-}
-
-.home-page .footer .bio p {
-  line-height: 24px;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 900;
+  margin: 1rem 0;
 }
 
 .home-page .footer .contact {
@@ -937,7 +950,7 @@
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .home-page .footer .contact .quick {
@@ -948,11 +961,10 @@
   grid-area: 1 / 1 /2 /2;
 }
 
-.home-page .footer .contact .quick h3 {
-  font-weight: 600;
-  font-size: 26px;
+.home-page .footer .contact .quick h4 {
   color: #be5050;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   text-decoration: underline;
 }
 
@@ -962,15 +974,10 @@
 
 .home-page .footer .contact .quick ul li {
   margin-bottom: 6px;
-  cursor: pointer;
 }
 
 .home-page .footer .contact .quick ul li a {
-  text-decoration: none;
   color: #333;
-  line-height: 24px;
-  font-weight: 500;
-  font-size: 18px;
 }
 
 .home-page .footer .contact .quick ul li a:hover {
@@ -985,11 +992,10 @@
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.home-page .footer .contact .talk h3 {
-  font-weight: 600;
-  font-size: 26px;
+.home-page .footer .contact .talk h4 {
   color: #be5050;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   text-decoration: underline;
 }
 
@@ -1011,6 +1017,21 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 2 / 1 / 3 / 3;
+}
+
+.home-page .footer .contact .subscribe form input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #be5050;
+  margin-right: 1rem;
+  outline: none;
+}
+
+.home-page .footer .contact .subscribe form input[type="button"] {
+  cursor: pointer;
+  background: #be5050;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 @media (min-width: 900px) and (max-width: 1098px) {
@@ -2704,13 +2725,13 @@
 
 .list-biz .list-body .white-bg {
   width: 700px;
-  height: 500px;
+  height: 558px;
   border-radius: 50px;
   background: #ffffff;
   -webkit-transform: rotate(-41deg);
           transform: rotate(-41deg);
   position: absolute;
-  top: -40%;
+  top: -39%;
   left: 52%;
 }
 
@@ -2809,7 +2830,7 @@
 
 .list-biz .list-body .list-form .sign section {
   position: absolute;
-  bottom: 0;
+  bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5174,6 +5195,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Manjari", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

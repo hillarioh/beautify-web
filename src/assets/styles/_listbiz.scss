@@ -17,12 +17,12 @@
 
     .white-bg {
       width: 700px;
-      height: 500px;
+      height: 558px;
       border-radius: 50px;
       background: #ffffff;
       transform: rotate(-41deg);
       position: absolute;
-      top: -40%;
+      top: -39%;
       left: 52%;
     }
 
@@ -80,7 +80,7 @@
         }
         section {
           position: absolute;
-          bottom: 0;
+          bottom: 5rem;
           display: flex;
           flex-wrap: wrap;
           article {
