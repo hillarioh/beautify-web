@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import intro from "../assets/images/intro.png";
 import scissors from "../assets/images/scissors.png";
 import haircuts from "../assets/images/haircut-service.png";
@@ -30,16 +30,25 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
 
 function Home() {
-  window.addEventListener("scroll", (e) => {
-    let header = document.querySelector(".nav");
-    header.classList.toggle("sticky", window.scrollY > 0);
-  });
+  const addStickyNav = () => {
+    let header = document.getElementById("nav");
+    if (header) {
+      header.classList.toggle("sticky", window.scrollY > 0);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", addStickyNav);
+    return () => {
+      window.removeEventListener("scroll", addStickyNav);
+    };
+  }, []);
+
   return (
     <div className="home-page">
       <div className="red-bg">
         <img src={scissors} alt="scissors" />
       </div>
-      <nav className="nav">
+      <nav className="nav" id="nav">
         <ul>
           <li>
             <Link to="/set-up">Barber?</Link>
@@ -64,16 +73,14 @@ function Home() {
       <div className="header">
         <div className="header-1">
           <div className="top">
-            <p>
+            <h2>
               DISCOVER &<br /> BOOK{" "}
-            </p>
-            <span className="beauty">Beauty &</span>
-            <h3>Barber Appointments</h3>
+            </h2>
+            <h2 className="beauty">Beauty &</h2>
+            <p>Barber Appointments</p>
           </div>
 
-          <button>
-            <Link to="/signup">Get Started</Link>
-          </button>
+          <Link to="/signup">Get Started</Link>
         </div>
 
         <div className="header-2">
@@ -81,12 +88,10 @@ function Home() {
         </div>
       </div>
       <div className="step-swagger">
-        <p className="step">STEP</p>
-        <p className="step" style={{ color: "#605f5f" }}>
-          INTO
-        </p>
-        <p className="your">YOUR</p>
-        <p className="swag">SWAGGER</p>
+        <h1>STEP</h1>
+        <h1 style={{ color: "#605f5f" }}>INTO</h1>
+        <h1 className="your">YOUR</h1>
+        <h1 className="swag">SWAGGER</h1>
       </div>
       <div className="services">
         <div className="service haircuts right-part ">
@@ -154,7 +159,7 @@ function Home() {
         <div className="why-body">
           <div className="why-item">
             <img src={wallet} alt="wallet" />
-            <h2>TOP UP YOUR WALLET</h2>
+            <h3>TOP UP YOUR WALLET</h3>
             <p>
               Make deposits to your wallet and view current balances and
               transactions.
@@ -162,7 +167,7 @@ function Home() {
           </div>
           <div className="why-item">
             <img src={wallet} alt="wallet" />
-            <h2>TOP UP YOUR WALLET</h2>
+            <h3>TOP UP YOUR WALLET</h3>
             <p>
               Make deposits to your wallet and view current balances and
               transactions.
@@ -170,7 +175,7 @@ function Home() {
           </div>
           <div className="why-item">
             <img src={wallet} alt="wallet" />
-            <h2>TOP UP YOUR WALLET</h2>
+            <h3>TOP UP YOUR WALLET</h3>
             <p>
               Make deposits to your wallet and view current balances and
               transactions.
@@ -178,7 +183,7 @@ function Home() {
           </div>
           <div className="why-item">
             <img src={wallet} alt="wallet" />
-            <h2>TOP UP YOUR WALLET</h2>
+            <h3>TOP UP YOUR WALLET</h3>
             <p>
               Make deposits to your wallet and view current balances and
               transactions.
@@ -197,26 +202,22 @@ function Home() {
         </div>
         <div className="olive-shop">
           <h2>PRODUCTS WE DELIVER TO YOU</h2>
-          <p>VISIT OUR SHOP FOR THE BEST HAIR PRODUCTS</p>
-          <button>
-            <Link to="/shop">SHOP NOW</Link>
-          </button>
+          <h3>VISIT OUR SHOP FOR THE BEST HAIR PRODUCTS</h3>
+          <Link to="/shop">SHOP NOW</Link>
         </div>
       </div>
       <div className="pro">
         <div className="pro-1">
-          <span>WANT</span>
-          <span>TO BE </span>
-          <span className="pro-1-p">A PRO?</span>
+          <h2>WANT</h2>
+          <h2>TO BE </h2>
+          <h2 className="pro-1-p">A PRO?</h2>
         </div>
         <div className="pro-2">
-          <button>
-            <Link to="/set-up">START BUSINESS</Link>
-          </button>
+          <Link to="/set-up">START BUSINESS</Link>
         </div>
       </div>
       <div className="clients">
-        <h1>FROM OUR CLIENTS</h1>
+        <h2>FROM OUR CLIENTS</h2>
         <div>
           <div className="client-list">
             <div className="client-item">
@@ -314,39 +315,51 @@ function Home() {
         </div>
         <div className="bio">
           <h3>COMPANY LOGO</h3>
-          <p>
+          <h5>
             Company Name here is Comprised of beauty professionals all around
             the country. Clients can Acquire services from the comfortOf their
             home.
-          </p>
+          </h5>
         </div>
         <div className="contact">
           <div className="quick">
-            <h3>Quick Links</h3>
+            <h4>Quick Links</h4>
             <ul>
               <li>
-                <Link to="/shop">Shop</Link>
+                <Link to="/shop">
+                  <h5>Shop</h5>
+                </Link>
               </li>
               <li>
-                <Link to="/set-up">Barber?</Link>
+                <Link to="/set-up">
+                  <h5>Barber?</h5>
+                </Link>
               </li>
               <li>
-                <Link to="/set-up">Beauty Professional</Link>
+                <Link to="/set-up">
+                  <h5>Beauty Professional</h5>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="talk">
-            <h3>Talk To Us</h3>
+            <h4>Talk To Us</h4>
             <ul>
-              <li>info@companyname.com</li>
-              <li>+254 711223344</li>
-              <li>Help Centre</li>
+              <li>
+                <h5>info@companyname.com</h5>
+              </li>
+              <li>
+                <h5>+254 711223344</h5>
+              </li>
+              <li>
+                <h5>Help Centre</h5>
+              </li>
             </ul>
           </div>
           <div className="subscribe">
-            <h3>FOR LATEST NEWS AND UPDATES</h3>
+            <h4>FOR LATEST NEWS AND UPDATES</h4>
             <form action="">
-              <TextField type="email" label="email address" variant="filled" />
+              <input type="email" name="email" placeholder="email address" />
               <input type="button" value="subscribe" />
             </form>
           </div>

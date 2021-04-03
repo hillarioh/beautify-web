@@ -1,24 +1,4 @@
-@font-face {
-  font-family: "Manjari";
-  font-weight: 100;
-  font-display: block;
-  src: url("../font/Manjari-Thin.ttf");
-}
-
-@font-face {
-  font-family: "Manjari";
-  font-weight: 400;
-  font-display: block;
-  src: url("../font/Manjari-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Manjari";
-  font-weight: 600;
-  font-display: block;
-  src: url("../font/Manjari-Bold.ttf");
-}
-
+@import "./font";
 @import "./variables";
 @import "./home";
 @import "./header";
@@ -31,12 +11,10 @@
 @import "./client";
 @import "./book";
 @import "./loggedhome";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manjari", sans-serif;
-}
-
-.App {
+  font-family: "Poppins", sans-serif;
 }
