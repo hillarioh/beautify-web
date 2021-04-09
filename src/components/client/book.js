@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ellipse from "../../assets/images/ellipse.png";
 import { Link, useRouteMatch } from "react-router-dom";
-
+import SelectDate from "./selectDate";
 const data = [
   {
     businessname: "CASTORIS BARBERSHOP",
@@ -53,6 +53,7 @@ const Servicer = ({ service, route }) => {
 function Book({ type }) {
   let match = useRouteMatch();
   const [userType, setUserType] = useState("");
+  const [overlay, setOverlay] = useState();
 
   useEffect(() => {
     if (type === "client") {
@@ -61,6 +62,33 @@ function Book({ type }) {
       setUserType("service-provider");
     }
   }, []);
+
+  useEffect(() => {
+    setOverlay(document.getElementById("overlay"));
+  }, []);
+
+  let active = "";
+
+  const openModal = (modal) => {
+    if (modal == null) return;
+    modal.classList.add("active");
+    active = `#${modal.id}.active`;
+    overlay.classList.add("active");
+  };
+
+  const getModal = (link) => {
+    const mode = document.querySelector(link.dataset.modalTarget);
+    openModal(mode);
+  };
+
+  const closeModal = (e) => {
+    const modals = document.querySelectorAll(active);
+    modals.forEach((modal) => {
+      if (modal == null) return;
+      modal.classList.remove("active");
+      overlay.classList.remove("active");
+    });
+  };
   return (
     <div className="booking-page">
       <header className="header">
@@ -76,7 +104,13 @@ function Book({ type }) {
           <span>{new Date().toDateString()}</span>
           <span>NAIROBI</span>
         </div>
-        <div className="tl">TODAY</div>
+        <h5
+          className="tl"
+          data-modal-target="#select_date"
+          onClick={(e) => getModal(e.target)}
+        >
+          Select date
+        </h5>
         <div className="tl">NAIROBI</div>
       </section>
       <section className="filter-body">
@@ -100,6 +134,12 @@ function Book({ type }) {
           ></iframe>
         </article>
       </section>
+      <SelectDate />
+      <div
+        className="overlay"
+        id="overlay"
+        onClick={(e) => closeModal(e)}
+      ></div>
     </div>
   );
 }

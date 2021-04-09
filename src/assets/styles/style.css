@@ -4366,6 +4366,7 @@ h5 {
   margin: 0 0.5rem;
   padding: 6px 30px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .booking-page .filter-body {
@@ -4439,6 +4440,162 @@ h5 {
   text-decoration: none;
   color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.booking-page .item_overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  width: 750px;
+  height: 430px;
+  max-width: 80%;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  border-radius: 20px;
+  z-index: 5;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.booking-page .item_overlay .item-1 {
+  padding: 2rem;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking-page .item_overlay .item-1 h4 {
+  color: #be5050;
+  margin-bottom: 1rem;
+}
+
+.booking-page .item_overlay .item-1 h3 {
+  cursor: pointer;
+  background: #be5050;
+  font-size: 16px;
+  padding: 4px 15px;
+  margin-top: 1rem;
+  color: #ffffff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-radius: 5px;
+}
+
+.booking-page .item_overlay .item-2 {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: #be5050;
+  border-radius: 0 20px 20px 0;
+}
+
+.booking-page .item_overlay .item-2 img {
+  height: 80%;
+  width: 90%;
+}
+
+.booking-page #select_date.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.booking-page .overlay {
+  position: fixed;
+  opacity: 0;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(139, 139, 137, 0.5);
+  pointer-events: none;
+}
+
+.booking-page .overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 3;
+}
+
+.react-datepicker {
+  width: 100%;
+}
+
+.react-datepicker .react-datepicker__navigation--previous {
+  left: 15px;
+  top: 30px;
+}
+
+.react-datepicker .react-datepicker__navigation--next {
+  right: 15px;
+  top: 30px;
+  font-size: 32px;
+}
+
+.react-datepicker .react-datepicker__month-container {
+  width: 100%;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__header .react-datepicker__current-month {
+  line-height: 3.5rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__header .react-datepicker__day-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 3.5rem;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__header .react-datepicker__day-names .react-datepicker__day-name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__month {
+  margin: 0;
+  background: #f0f0f0;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 3rem;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .logged-page {
