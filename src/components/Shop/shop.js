@@ -11,15 +11,23 @@ import akusi from "../../assets/images/akusi.png";
 import fimg1 from "../../assets/images/fimg1.png";
 import fimg2 from "../../assets/images/fimg2.png";
 import fimg3 from "../../assets/images/fimg3.png";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 function Shop() {
   let match = useRouteMatch();
   const moveCard = () => {
-    document.querySelector(".category").scrollBy(150, 0);
+    let item = document.querySelector(".category");
+    if (item) {
+      item.scrollBy(150, 0);
+    }
   };
 
   const reverseCard = () => {
-    document.querySelector(".category").scrollBy(-150, 0);
+    let item = document.querySelector(".category");
+    if (item) {
+      item.scrollBy(-150, 0);
+    }
   };
 
   return (
@@ -43,9 +51,15 @@ function Shop() {
         <img src={img3} alt="initial product 3" className="product-top-img3" />
       </div>
       <div className="brand-logo">
-        <div className="brand-item">HOME</div>
-        <div className="brand-item">SHOP</div>
-        <div className="brand-item">BRANDS</div>
+        <div className="brand-item">
+          <span>HOME</span>{" "}
+        </div>
+        <div className="brand-item">
+          <span>SHOP</span>
+        </div>
+        <div className="brand-item">
+          <span>BRANDS</span>
+        </div>
         <div className="brand-item">
           <img src={marini} alt="brand 1" className="marini" />
         </div>
@@ -61,48 +75,33 @@ function Shop() {
         <hr className="line" />
       </div>
       <div className="products-category">
-        <button className="prv" onClick={(e) => reverseCard(e)}>
-          P
-        </button>
-        <button className="nxt" onClick={(e) => moveCard(e)}>
-          N
-        </button>
+        <ArrowBackIosIcon className="prv" onClick={reverseCard} />
+        <ArrowForwardIosIcon className="nxt" onClick={moveCard} />
+
         <div className="category">
           <div className="category-item">
             <span>HAIR CARE PRODUCTS</span>
-            <button>
-              <Link to={`${match.url}/categoryid`}>Explore</Link>
-            </button>
+            <Link to={`${match.url}/categoryid`}>Explore</Link>
           </div>
           <div className="category-item">
             <span>SHOP THE COLLECTION</span>
-            <button>
-              <Link to={`${match.url}/categoryid`}>Explore</Link>
-            </button>
+            <Link to={`${match.url}/categoryid`}>Explore</Link>
           </div>
           <div className="category-item">
             <span>BEARD CARE</span>
-            <button>
-              <Link to={`${match.url}/categoryid`}>Explore</Link>
-            </button>
+            <Link to={`${match.url}/categoryid`}>Explore</Link>
           </div>
           <div className="category-item">
             <span>GROOMING KITS</span>
-            <button>
-              <Link to={`${match.url}/categoryid`}>Explore</Link>
-            </button>
+            <Link to={`${match.url}/categoryid`}>Explore</Link>
           </div>
           <div className="category-item">
             <span>MAKEUP KITS</span>
-            <button>
-              <Link to={`${match.url}/categoryid`}>Explore</Link>
-            </button>
+            <Link to={`${match.url}/categoryid`}>Explore</Link>
           </div>
           <div className="category-item">
             <span>SHOP THE COLLECTION</span>
-            <button>
-              <Link to={`${match.url}/categoryid`}>Explore</Link>
-            </button>
+            <Link to={`${match.url}/categoryid`}>Explore</Link>
           </div>
         </div>
       </div>
@@ -115,7 +114,7 @@ function Shop() {
             </div>
             <div className="featured-item-details">
               <p>Clear Scalp hair product</p>
-              <h2>KES 2500</h2>
+              <h4>KES 2500</h4>
               <button>BUY NOW</button>
             </div>
           </div>
@@ -125,7 +124,7 @@ function Shop() {
             </div>
             <div className="featured-item-details">
               <p>Clear Scalp hair product</p>
-              <h2>KES 2500</h2>
+              <h4>KES 2500</h4>
               <button>BUY NOW</button>
             </div>
           </div>
@@ -135,7 +134,7 @@ function Shop() {
             </div>
             <div className="featured-item-details">
               <p>Clear Scalp hair product</p>
-              <h2>KES 2500</h2>
+              <h4>KES 2500</h4>
               <button>BUY NOW</button>
             </div>
           </div>

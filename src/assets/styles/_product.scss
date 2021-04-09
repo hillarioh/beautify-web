@@ -1,6 +1,5 @@
 .product-page {
   position: relative;
-  max-width: 1920px;
   min-height: 100vh;
   background: #eae8e8;
   padding: 0 4rem;
@@ -77,12 +76,16 @@
     .brand-item {
       flex: 1;
       text-align: center;
+      span {
+        font-size: 24px;
+        font-weight: 500;
+      }
       .marini {
         width: 120px;
         height: 120px;
       }
       .akusi {
-        width: "117px";
+        width: 117px;
       }
       .laguah {
         width: 190px;
@@ -93,7 +96,6 @@
   .shop-logo {
     width: 280px;
     position: absolute;
-    font-family: "Josefin Sans", sans-serif;
     color: #be5050;
     font-size: 20px;
     right: -6rem;
@@ -110,6 +112,7 @@
   }
 
   .products-category {
+    margin-top: 3rem;
     display: grid;
     align-items: center;
     grid-template-columns: 30px 1fr 30px;
@@ -118,27 +121,17 @@
     .prv {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-      font-size: 20px;
-      // justify-self: end;
-      background: blueviolet;
-      color: #ffffff;
+      font-size: 36px;
       z-index: 1;
-      border: none;
-      border-radius: 15px;
-      padding: 12px 14px;
+      cursor: pointer;
     }
     .nxt {
       grid-column: 3 / 4;
       grid-row: 1 / 2;
-      font-size: 20px;
-      background: blueviolet;
-      color: #ffffff;
+      font-size: 36px;
       z-index: 1;
-      border: none;
-      border-radius: 15px;
-
       right: 0;
-      padding: 12px 14px;
+      cursor: pointer;
     }
 
     .category {
@@ -146,35 +139,35 @@
       grid-row: 1 / 2;
       display: grid;
       grid-gap: 12px;
-      grid-template-rows: 340px;
+      grid-template-rows: 300px;
       grid-template-columns: repeat(6, 270px);
       overflow-x: hidden;
+      scroll-behavior: smooth;
+      padding-right: 8px;
 
       .category-item {
-        border-radius: 25px;
+        border-radius: 15px;
         background: #ffffff;
         position: relative;
         margin: 1rem;
+        box-shadow: 2px -1px 12px 0px rgba(0, 0, 0, 0.75);
 
         span {
           position: absolute;
-          font-size: 35px;
+          font-size: 24px;
           font-weight: 700;
           top: 30%;
           margin: 0 1.5rem;
         }
 
-        button {
+        a {
           position: absolute;
-          font-family: "Josefin Sans", sans-serif;
-          font-size: 26px;
           bottom: 1.5rem;
           right: 1.5rem;
           background: #ffbf81;
           color: #ffffff;
-          border-radius: 25px;
+          border-radius: 8px;
           padding: 12px 14px;
-          border: none;
         }
       }
     }
@@ -182,7 +175,6 @@
 
   .featured {
     margin-top: 6rem;
-    padding: 0 2rem;
     h4 {
       margin-bottom: 2rem;
       font-size: 20px;
@@ -192,43 +184,54 @@
 
       .featured-item {
         flex: 1;
-        height: 500px;
+        background: #b9b3b347;
+        margin: 0 1rem;
+        margin-bottom: 4rem;
+        border-radius: 10px;
+        box-shadow: 2px 3px 12px -1px rgba(0, 0, 0, 0.75);
 
         .featured-item-img {
           overflow-y: hidden;
-          height: 60%;
+          height: 340px;
+          border-radius: 10px 10px 0 0;
+          background: #ffffff;
           display: flex;
           align-items: flex-end;
+          justify-content: center;
           img {
-            width: 100%;
+            width: 90%;
+            height: 85%;
           }
         }
         .featured-item-details {
-          font-family: "Josefin Sans", sans-serif;
-          padding-top: 2rem;
-          padding-left: 1.5rem;
-
+          padding-top: 1rem;
+          text-align: center;
           p {
-            font-size: 14px;
-            margin-bottom: 2rem;
+            font-size: 16px;
           }
 
-          h2 {
-            font-size: 36px;
+          h4 {
             font-weight: 800;
             color: #aca6a7;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
           }
 
           button {
             border: none;
             background: #be5050;
-            font-family: "Josefin Sans", sans-serif;
-            font-size: 18px;
-            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 800;
+            border-radius: 8px;
             padding: 10px 22px;
             color: #ffffff;
+            margin-bottom: 1rem;
           }
+        }
+
+        &:hover {
+          // border: 1px solid #be5050;
+          box-shadow: 2px -1px 12px 0px rgba(0, 0, 0, 0.75);
         }
       }
     }
