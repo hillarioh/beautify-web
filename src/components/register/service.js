@@ -13,42 +13,28 @@ function Service() {
       </div>
       <div className="login">
         <section className="clgn">
-          <h2>Sign Up As Service Provider</h2>
-          <ThemeProvider theme={theme}>
-            <form className="service-form" noValidate autoComplete="off">
-              <TextField
-                id="outline-text-input"
-                label="Full Name"
-                className="txt"
-                autoComplete="off"
-                variant="outlined"
-                type="text"
-                color="primary"
-              />
-              <TextField
-                id="outline-email-input"
-                label="Email Address"
-                className="txt"
-                autoComplete="off"
-                variant="outlined"
-                type="email"
-                placeholder="test@test.com"
-                color="primary"
-              />
-              <TextField
-                id="outlined-password-input"
-                label="Password"
-                type="password"
-                autoComplete="off"
-                variant="outlined"
-                className="txt"
-              />
-            </form>
-          </ThemeProvider>
-          <button>
-            <Link to="/login/service">SIGN UP</Link>
-          </button>
-          <h4>Forgot Password?</h4>
+          <h3>Sign Up As Service Provider</h3>
+          <form className="service-form">
+            <label for="first-name">First Name</label>
+            <input className="txt" type="text" />
+            <label for="last-name">Last Name</label>
+            <input className="txt" type="text" />
+            <label for="email">Email Address</label>
+            <input
+              label="Email Address"
+              className="txt"
+              type="email"
+              placeholder="test@test.com"
+            />
+            <label for="password">Password</label>
+            <input label="Password" type="password" className="txt" />
+            <label for="password">Confirm Password</label>
+            <input label="Password" type="password" className="txt" />
+            <button>
+              <Link to="/login/service">SIGN UP</Link>
+            </button>
+          </form>
+          <h5>Forgot Password?</h5>
         </section>
       </div>
     </div>

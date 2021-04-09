@@ -20,6 +20,7 @@ import shopping from "../assets/images/shopping.png";
 import navy from "../assets/images/nav.png";
 import leaf from "../assets/images/dwn-leaf.png";
 import can from "../assets/images/dwn-can.png";
+import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
 
 import { TextField } from "@material-ui/core";
 
@@ -47,6 +48,12 @@ function Home() {
     <div className="home-page">
       <div className="red-bg">
         <img src={scissors} alt="scissors" />
+      </div>
+      <div className="fixed-social">
+        <TwitterIcon className="twt" />
+        <InstagramIcon className="inst" />
+        <PinterestIcon className="pin" />
+        <FacebookIcon className="fab" />
       </div>
       <nav className="nav" id="nav">
         <ul>
@@ -88,10 +95,12 @@ function Home() {
         </div>
       </div>
       <div className="step-swagger">
-        <h1>STEP</h1>
-        <h1 style={{ color: "#605f5f" }}>INTO</h1>
-        <h1 className="your">YOUR</h1>
-        <h1 className="swag">SWAGGER</h1>
+        <div className="stepp">
+          <h1>STEP</h1>
+          <h1 style={{ color: "#ffffff" }}>INTO</h1>
+          <h1 className="your">YOUR</h1>
+          <h1 className="swag">SWAGGER</h1>
+        </div>
       </div>
       <div className="services">
         <div className="service haircuts right-part ">
@@ -158,7 +167,10 @@ function Home() {
         </div>
         <div className="why-body">
           <div className="why-item">
-            <img src={wallet} alt="wallet" />
+            <AccountBalanceWalletIcon
+              style={{ fontSize: "46px", color: "#be5050" }}
+            />
+            {/* <img src={wallet} alt="wallet" /> */}
             <h3>TOP UP YOUR WALLET</h3>
             <p>
               Make deposits to your wallet and view current balances and
@@ -166,7 +178,9 @@ function Home() {
             </p>
           </div>
           <div className="why-item">
-            <img src={wallet} alt="wallet" />
+            <AccountBalanceWalletIcon
+              style={{ fontSize: "46px", color: "#be5050" }}
+            />
             <h3>TOP UP YOUR WALLET</h3>
             <p>
               Make deposits to your wallet and view current balances and
@@ -174,7 +188,9 @@ function Home() {
             </p>
           </div>
           <div className="why-item">
-            <img src={wallet} alt="wallet" />
+            <AccountBalanceWalletIcon
+              style={{ fontSize: "46px", color: "#be5050" }}
+            />
             <h3>TOP UP YOUR WALLET</h3>
             <p>
               Make deposits to your wallet and view current balances and
@@ -182,7 +198,9 @@ function Home() {
             </p>
           </div>
           <div className="why-item">
-            <img src={wallet} alt="wallet" />
+            <AccountBalanceWalletIcon
+              style={{ fontSize: "46px", color: "#be5050" }}
+            />
             <h3>TOP UP YOUR WALLET</h3>
             <p>
               Make deposits to your wallet and view current balances and

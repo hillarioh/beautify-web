@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextField, ThemeProvider } from "@material-ui/core";
 import { theme } from "../theme";
 import { Link } from "react-router-dom";
 
 function ClientLogin() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <div className="client-login">
       <div className="company">
@@ -13,33 +15,28 @@ function ClientLogin() {
       </div>
       <div className="login">
         <section className="clgn">
-          <h2>Log in As Client</h2>
-          <ThemeProvider theme={theme}>
-            <form className="service-form" noValidate autoComplete="off">
-              <TextField
-                id="outline-email-input"
-                label="Email Address"
-                className="txt"
-                autoComplete="off"
-                variant="outlined"
-                type="email"
-                placeholder="test@test.com"
-                color="primary"
-              />
-              <TextField
-                id="outlined-password-input"
-                label="Password"
-                type="password"
-                autoComplete="off"
-                variant="outlined"
-                className="txt"
-              />
-            </form>
-          </ThemeProvider>
-          <button>
-            <Link to="/client">LOG IN</Link>
-          </button>
-          <h4>Forgot Password?</h4>
+          <h3>Log in As a Client</h3>
+          <form className="service-form">
+            <label for="email">Email Address</label>
+            <input
+              label="Email Address"
+              className="txt"
+              type="email"
+              value={email}
+              placeholder="test@test.com"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button style={{ marginTop: "1rem" }}>
+              <Link to="/user">LOG IN</Link>
+            </button>
+          </form>
+          <h5>Forgot Password?</h5>
         </section>
       </div>
     </div>

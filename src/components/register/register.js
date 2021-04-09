@@ -40,7 +40,9 @@ function SignUp() {
           <button>
             <Link to={`${match.url}/service`}>AS SERVICE PROVIDER</Link>
           </button>
-          <h4>Forgot Password?</h4>
+          <Link>
+            <h5>Forgot Password?</h5>
+          </Link>
         </section>
       </div>
     </div>

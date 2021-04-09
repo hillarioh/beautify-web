@@ -18,6 +18,65 @@
     }
   }
 
+  .fixed-social {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0%;
+    top: 40%;
+    color: #ffffff;
+    .fab {
+      background: #3b5998;
+      font-size: 36px;
+      padding: 4px 6px;
+      cursor: pointer;
+      &:hover {
+        background: #ffffff;
+        color: #3b5998;
+        border: 2px solid #3b5998;
+      }
+    }
+    .twt {
+      background: #4099ff;
+      font-size: 36px;
+      padding: 4px 6px;
+      cursor: pointer;
+      transition-delay: 2ms;
+      margin-bottom: 2px;
+      &:hover {
+        background: #ffffff;
+        color: #4099ff;
+        border: 2px solid #4099ff;
+      }
+    }
+    .inst {
+      background: #8a3ab9;
+      font-size: 36px;
+      padding: 4px 6px;
+      cursor: pointer;
+      transition-delay: 2ms;
+      margin-bottom: 2px;
+      &:hover {
+        background: #ffffff;
+        color: #8a3ab9;
+        border: 2px solid #8a3ab9;
+      }
+    }
+    .pin {
+      background: #cb2027;
+      font-size: 36px;
+      padding: 4px 6px;
+      cursor: pointer;
+      transition-delay: 2ms;
+      margin-bottom: 2px;
+      &:hover {
+        background: #ffffff;
+        color: #cb2027;
+        border: 2px solid #cb2027;
+      }
+    }
+  }
+
   nav {
     padding: 3rem 2rem;
     position: fixed;
@@ -62,7 +121,12 @@
       width: 500px;
       display: flex;
       flex-direction: column;
+      padding-top: 1rem;
       justify-content: space-between;
+      animation-duration: 1s;
+      animation-name: slidefade;
+      animation-fill-mode: forwards;
+      // animation: 2s slidefade 2s forwards;
 
       .top {
         p {
@@ -100,17 +164,41 @@
     }
   }
 
-  .step-swagger {
-    margin: 5rem;
+  .hero-content-area {
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+  }
 
-    .your {
-      color: #030303;
-      font-size: 46px;
+  @keyframes slidefade {
+    100% {
+      opacity: 1;
+      padding: 0;
     }
+  }
 
-    .swag {
-      color: #be5050;
-      font-size: 70px;
+  .step-swagger {
+    padding: 5rem;
+    margin: 4rem 0;
+    background: linear-gradient(
+      108deg,
+      rgba(190, 80, 80, 1) 27%,
+      // rgba(255, 56, 92, 1) 17%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    .stepp {
+      opacity: 0;
+      padding-top: 100px;
+      animation: 1s slidefade 1s forwards;
+      .your {
+        color: #030303;
+        font-size: 46px;
+      }
+
+      .swag {
+        color: #ffffff;
+        font-size: 70px;
+      }
     }
   }
 
@@ -301,12 +389,14 @@
       .why-item {
         flex: 1;
         text-align: center;
-        margin: 1rem 2rem;
-        img {
-          width: 50px;
-          height: 50px;
-        }
+        padding: 2rem;
+        margin: 0 1rem;
+        // background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #eeeeee;
+
         h3 {
+          font-size: 18px;
+          font-weight: 500;
           margin: 1rem;
           color: #be5050;
         }
@@ -419,7 +509,7 @@
         flex: 1;
         margin: 0 1rem;
         background: #f7f2f2;
-        border-radius: 55px;
+        border-radius: 15px;
         padding: 0 1rem;
         text-align: center;
         min-height: 400px;
@@ -481,9 +571,9 @@
     background: #be5050;
     display: flex;
     height: 480px;
-    border-radius: 90px;
+    border-radius: 15px;
     .down-1 {
-      color: #eae8e8;
+      color: #ffffff;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -510,6 +600,8 @@
         width: 270px;
         padding: 1.5rem;
         background: #ffffff;
+        border: 1px solid #eeeeee;
+
         border-radius: 35px;
         margin-right: 4rem;
         display: flex;
@@ -590,6 +682,7 @@
         .twt {
           position: absolute;
           font-size: 32px;
+          color: #ffffff;
           top: 5%;
           left: 40%;
           transform: translate(50%);
@@ -598,6 +691,7 @@
         .inst {
           position: absolute;
           font-size: 32px;
+          color: #ffffff;
           top: 10%;
           right: 32%;
           cursor: pointer;
@@ -607,6 +701,7 @@
           font-size: 32px;
           top: 20%;
           right: 18%;
+          color: #ffffff;
           cursor: pointer;
         }
         .fab {
@@ -614,6 +709,7 @@
           font-size: 32px;
           top: 32%;
           right: 10%;
+          color: #ffffff;
           cursor: pointer;
         }
         .shine {
@@ -637,8 +733,6 @@
         color: #be5050;
         font-weight: 900;
         margin: 1rem 0;
-      }
-      p {
       }
     }
     .contact {

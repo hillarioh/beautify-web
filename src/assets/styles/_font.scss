@@ -1,68 +1,54 @@
 @font-face {
-  font-family: "Poppins";
-  font-weight: 100;
-  font-display: block;
-  src: url("../font/Poppins-Thin.ttf");
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-weight: 200;
-  font-display: block;
-  src: url("../font/Poppins-ExtraLight.ttf");
-}
-
-@font-face {
-  font-family: "Poppins";
+  font-family: "Rubik";
   font-weight: 300;
   font-display: block;
-  src: url("../font/Poppins-Light.ttf");
+  src: url("../font/Rubik-Light.ttf");
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: "Rubik";
   font-weight: 400;
   font-display: block;
-  src: url("../font/Poppins-Regular.ttf");
+  src: url("../font/Rubik-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: "Rubik";
   font-weight: 500;
   font-display: block;
-  src: url("../font/Poppins-Medium.ttf");
+  src: url("../font/Rubik-Medium.ttf");
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: "Rubik";
   font-weight: 600;
   font-display: block;
-  src: url("../font/Poppins-SemiBold.ttf");
+  src: url("../font/Rubik-SemiBold.ttf");
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: "Rubik";
   font-weight: 700;
   font-display: block;
-  src: url("../font/Poppins-Bold.ttf");
+  src: url("../font/Rubik-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: "Rubik";
   font-weight: 800;
   font-display: block;
-  src: url("../font/Poppins-ExtraBold.ttf");
+  src: url("../font/Rubik-ExtraBold.ttf");
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: "Rubik";
   font-weight: 900;
   font-display: block;
-  src: url("../font/Poppins-Black.ttf");
+  src: url("../font/Rubik-Black.ttf");
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -76,7 +62,7 @@ a {
 
 h1 {
   font-size: 42px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h2 {
