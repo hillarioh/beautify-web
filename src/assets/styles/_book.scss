@@ -112,11 +112,11 @@
       flex: 6;
       display: flex;
       flex-direction: column;
-      h4 {
+      h4.date {
         color: #be5050;
         margin-bottom: 1rem;
       }
-      h3 {
+      h3.date {
         cursor: pointer;
         background: #be5050;
         font-size: 16px;
@@ -126,6 +126,43 @@
         align-self: flex-end;
         border-radius: 5px;
       }
+      .locate {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        input {
+          flex: 1;
+          padding: 5px;
+          border-radius: 5px;
+          margin-right: 1rem;
+          outline: none;
+          border: 2px solid #eae8e8;
+          &:focus {
+            border: 2px solid #979595;
+          }
+        }
+        .apply {
+          flex: 1;
+          display: flex;
+          h4 {
+            color: #ffffff;
+            background: #be5050;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+          }
+        }
+      }
+      #map {
+        height: 100%;
+        border-radius: 0 0 0 20px;
+      }
+    }
+    .mapp {
+      padding: 0;
     }
     .item-2 {
       flex: 4;
@@ -143,6 +180,10 @@
   }
 
   #select_date.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #select_location.active {
     transform: translate(-50%, -50%) scale(1);
   }
 

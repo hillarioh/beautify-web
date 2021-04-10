@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ellipse from "../../assets/images/ellipse.png";
 import { Link, useRouteMatch } from "react-router-dom";
 import SelectDate from "./selectDate";
+import SelectLocation from "./selectLocation";
 const data = [
   {
     businessname: "CASTORIS BARBERSHOP",
@@ -111,7 +112,13 @@ function Book({ type }) {
         >
           Select date
         </h5>
-        <div className="tl">NAIROBI</div>
+        <h5
+          className="tl"
+          data-modal-target="#select_location"
+          onClick={(e) => getModal(e.target)}
+        >
+          Select Location
+        </h5>
       </section>
       <section className="filter-body">
         <article className="business">
@@ -135,6 +142,7 @@ function Book({ type }) {
         </article>
       </section>
       <SelectDate />
+      <SelectLocation />
       <div
         className="overlay"
         id="overlay"
