@@ -20,18 +20,6 @@ import {
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  const [authDetails, setIsAuthenticated] = useState({
-    isAuthenticated: true,
-    userType: "serviceProvider",
-  });
-
-  const login = () => {
-    setIsAuthenticated({ ...authDetails, isAuthenticated: true });
-  };
-
-  const logout = () => {
-    setIsAuthenticated({ ...authDetails, isAuthenticated: false });
-  };
   return (
     <Router>
       <Switch>
@@ -39,16 +27,9 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/user-profile" component={UserProfile} />
         <Route path="/set-up" component={SetUpBiz} />
-        <ProtectedRoute
-          path="/book"
-          authDetails={authDetails}
-          logout={logout}
-          component={Book}
-        />
+        <ProtectedRoute path="/book" component={Book} />
         <ProtectedServiceRoute
           path="/service-provider"
-          authDetails={authDetails}
-          logout={logout}
           component={LoggedHome}
         />
         <Route path="/pay" component={Pay} />
@@ -57,12 +38,7 @@ function App() {
         <Route path="/shop" exact component={Shop} />
         <Route path="/checkout" component={Checkout} />
         <Route path="/" exact component={Home} />
-        <ProtectedClientRoute
-          authDetails={authDetails}
-          path="/user"
-          logout={logout}
-          component={LoggedHome}
-        />
+        <ProtectedClientRoute path="/user" component={LoggedHome} />
         <Route path="*">
           <div>404 Not found </div>
         </Route>

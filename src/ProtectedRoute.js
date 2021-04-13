@@ -1,18 +1,16 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 
-function ProtectedClientRoute({
-  component: Component,
-  authDetails,
-  logout,
-  ...rest
-}) {
+const token = localStorage.getItem("token");
+const user = localStorage.getItem("user");
+
+function ProtectedClientRoute({ component: Component, ...rest }) {
   return (
     <Route
       {...rest}
       render={(props) => {
-        if (authDetails.isAuthenticated && authDetails.userType === "client") {
-          return <Component logout={logout} type="client" />;
+        if (token && user === "client") {
+          return <Component type="client" />;
         } else {
           return (
             <Redirect
@@ -28,21 +26,13 @@ function ProtectedClientRoute({
   );
 }
 
-function ProtectedServiceRoute({
-  component: Component,
-  authDetails,
-  logout,
-  ...rest
-}) {
+function ProtectedServiceRoute({ component: Component, ...rest }) {
   return (
     <Route
       {...rest}
       render={(props) => {
-        if (
-          authDetails.isAuthenticated &&
-          authDetails.userType === "serviceProvider"
-        ) {
-          return <Component logout={logout} type="serviceProvider" />;
+        if (token && user === "serviceProvider") {
+          return <Component type="serviceProvider" />;
         } else {
           return (
             <Redirect
@@ -58,18 +48,13 @@ function ProtectedServiceRoute({
   );
 }
 
-function ProtectedRoute({
-  component: Component,
-  authDetails,
-  logout,
-  ...rest
-}) {
+function ProtectedRoute({ component: Component, ...rest }) {
   return (
     <Route
       {...rest}
       render={(props) => {
-        if (authDetails.isAuthenticated) {
-          return <Component logout={logout} type={authDetails.userType} />;
+        if (token) {
+          return <Component type={user} />;
         } else {
           return (
             <Redirect

@@ -3,6 +3,7 @@ import { Link, useRouteMatch } from "react-router-dom";
 
 function Nav() {
   let match = useRouteMatch();
+
   return (
     <div className="service-nav">
       <h1>
@@ -10,6 +11,7 @@ function Nav() {
           COMPANY<span>LOGO</span>
         </Link>
       </h1>
+      {console.log(window.location.href)}
       <ul>
         <li style={{ background: "#EAE8E8" }}>
           <Link to={`${match.url}`}>PROFILE</Link>

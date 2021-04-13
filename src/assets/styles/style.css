@@ -4379,13 +4379,17 @@ h5 {
   display: flex;
 }
 
-.booking-page .filter-body article {
+.booking-page .filter-body .map {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 100%;
 }
 
 .booking-page .filter-body .business {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 0 2rem;
   overflow-y: scroll;
   scroll-padding-top: 1rem;
